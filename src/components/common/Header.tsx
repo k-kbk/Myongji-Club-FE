@@ -8,7 +8,7 @@ export default function Header() {
   const curPath = router.pathname;
 
   return (
-    <header className="fixed flex h-16 w-full items-center justify-center border-b bg-white px-5">
+    <header className="fixed flex h-16 w-full items-center justify-center border-b bg-white px-4">
       <div className="flex w-full max-w-screen-lg items-center justify-between">
         <Link href="/" className="px-3">
           <Image src="/logo_main.svg" width={1} height={1} alt="myongji-club" />
