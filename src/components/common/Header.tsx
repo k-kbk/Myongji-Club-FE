@@ -16,17 +16,17 @@ export default function Header() {
         <div>
           <Link
             href="/"
-            className={`rounded-lg px-3 py-2 font-semibold ${
+            className={`rounded-lg px-3 py-3 font-semibold ${
               curPath === '/' ? 'text-blue-600' : 'text-gray-700'
-            } mx-1 transition-colors hover:bg-gray-100`}
+            } mx-1 transition-colors hover:text-blue-600`}
           >
             홈
           </Link>
           <Link
             href="/notice"
-            className={`rounded-lg px-3 py-2 font-semibold ${
+            className={`rounded-lg px-3 py-3 font-semibold ${
               curPath === '/notice' ? 'text-blue-600' : 'text-gray-700'
-            } mx-1 transition-colors hover:bg-gray-100`}
+            } mx-1 transition-colors hover:text-blue-600`}
           >
             공지사항
           </Link>
