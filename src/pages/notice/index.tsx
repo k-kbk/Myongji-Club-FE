@@ -60,7 +60,7 @@ export default function Index() {
             <li key={item.id} className="border-b">
               <Link
                 href={`/notice/${item.id}`}
-                className="inline-block h-24 w-full py-4 transition-opacity hover:opacity-50"
+                className="inline-block h-20 w-full py-4 transition-opacity hover:opacity-50 md:h-24"
               >
                 <div className="block text-lg font-semibold sm:hidden">
                   {item.title.length > 24
