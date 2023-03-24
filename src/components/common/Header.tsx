@@ -8,25 +8,25 @@ export default function Header() {
   const curPath = router.pathname;
 
   return (
-    <header className="fixed flex h-16 w-full items-center justify-center border-b bg-white px-4">
+    <header className="fixed z-10 flex h-16 w-full items-center justify-center bg-white px-4 shadow-sm">
       <div className="flex w-full max-w-screen-lg items-center justify-between">
         <Link href="/" className="px-3">
-          <Image src="/logo_main.svg" width={1} height={1} alt="myongji-club" />
+          <Image src="/logo.svg" width={1} height={1} alt="myongji-club" />
         </Link>
         <div>
           <Link
             href="/"
             className={`rounded-lg px-3 py-3 font-semibold ${
-              curPath === '/' ? 'text-blue-600' : 'text-gray-700'
-            } mx-1 transition-colors hover:text-blue-600`}
+              curPath === '/' ? 'text-indigo-600' : 'text-gray-700'
+            } mx-1 transition-colors hover:text-indigo-600`}
           >
             홈
           </Link>
           <Link
             href="/notice"
             className={`rounded-lg px-3 py-3 font-semibold ${
-              curPath === '/notice' ? 'text-blue-600' : 'text-gray-700'
-            } mx-1 transition-colors hover:text-blue-600`}
+              curPath.includes('notice') ? 'text-indigo-600' : 'text-gray-700'
+            } mx-1 transition-colors hover:text-indigo-600`}
           >
             공지사항
           </Link>
