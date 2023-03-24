@@ -12,6 +12,9 @@ module.exports = {
         128: '32rem',
       },
       colors: {},
+      fontSize: {
+        '4.5xl': ['2.5rem', '2.5rem'],
+      },
     },
   },
 };
