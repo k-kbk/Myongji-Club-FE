@@ -60,17 +60,19 @@ export default function Index() {
             <li key={item.id} className="border-b">
               <Link
                 href={`/notice/${item.id}`}
-                className="inline-block h-20 w-full py-4 transition-opacity hover:opacity-50 md:h-24"
+                className="inline-block h-[5.5rem] w-full py-4 transition-opacity hover:opacity-50 md:h-24"
               >
-                <div className="block text-lg font-semibold sm:hidden">
+                <div className="block text-base font-semibold sm:hidden md:text-lg">
                   {item.title.length > 24
                     ? `${item.title.substring(0, 24)}..`
                     : item.title}
                 </div>
-                <div className="hidden text-lg font-semibold sm:block">
+                <div className="hidden text-base font-semibold sm:block md:text-lg">
                   {item.title}
                 </div>
-                <time className="font-medium text-gray-400">{item.date}</time>
+                <time className="text-sm font-medium text-gray-400 md:text-base">
+                  {item.date}
+                </time>
               </Link>
             </li>
           ))}
