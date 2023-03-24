@@ -1,7 +1,6 @@
-/* eslint-disable react/no-array-index-key */
-import { NoticeType } from '@/types/type';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { NoticeType } from '@/types/type';
+import { GetServerSideProps } from 'next/types';
 
 const dummy: Array<NoticeType> = [
   {
@@ -56,11 +55,7 @@ const content = [
   '감사합니다.',
 ];
 
-export default function Index() {
-  const router = useRouter();
-  const { id } = router.query;
-  const noticeId = parseInt(id as string, 10);
-
+export default function Index({ noticeId }: { noticeId: number }) {
   return (
     <>
       <div className="mb-6 md:mb-8">
@@ -73,6 +68,7 @@ export default function Index() {
       </div>
       <div className="mb-6 w-full rounded-lg bg-white px-4 py-4 drop-shadow-sm md:mb-8 md:px-7 md:py-7">
         {content.map((line, index) => (
+          // eslint-disable-next-line react/no-array-index-key
           <div key={index}>
             <p className="break-keep text-base font-medium md:text-lg ">
               {line}
@@ -92,3 +88,15 @@ export default function Index() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async (context: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  query: any;
+}) => {
+  const { id } = context.query;
+  return {
+    props: {
+      noticeId: id,
+    },
+  };
+};
