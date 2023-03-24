@@ -1,28 +1,36 @@
+import { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 
-export default function SearchBar() {
+type SearchBarProps = {
+  value: string;
+  onChange: Dispatch<SetStateAction<string>>;
+};
+
+export default function SearchBar({ value, onChange }: SearchBarProps) {
+  function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
+    onChange(event.target.value);
+  }
+
   return (
-    <div className="w-full sm:w-128">
-      <div className="py-2 text-left text-sm font-medium text-gray-400 sm:text-base">
-        동아리를 검색해보세요.
-      </div>
-      <form className="flex items-center justify-center rounded-lg bg-white text-lg font-semibold shadow-sm sm:text-xl">
+    <div className="mx-2 mt-6 mb-3 w-full sm:mx-0 sm:w-128 md:mt-7">
+      <div className="flex items-center justify-center rounded-lg bg-white text-lg font-semibold shadow-sm sm:text-xl">
         <input
           id="search"
           type="text"
-          className="w-full rounded-lg py-3 pl-5 outline-none"
+          className="spl-4 w-full rounded-lg py-2 pl-4 outline-none sm:py-3 sm:pl-5"
+          value={value}
           spellCheck={false}
+          onChange={handleChange}
         />
-        <button type="button">
-          <Image
-            src="search.svg"
-            width={10}
-            height={1}
-            alt="search"
-            className="h-12 px-3 py-2"
-          />
-        </button>
-      </form>
+        <Image
+          src="search.svg"
+          width={1}
+          height={1}
+          alt="search"
+          className="h-10 px-3 py-2 sm:h-12"
+          priority
+        />
+      </div>
     </div>
   );
 }
