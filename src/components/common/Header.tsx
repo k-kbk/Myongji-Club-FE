@@ -12,7 +12,7 @@ export default function Header() {
       <div className="flex w-full max-w-screen-lg items-center justify-between">
         <Link href="/" className="px-3">
           <Image
-            src="/logo-main.svg"
+            src="/logo.svg"
             width={1}
             height={1}
             alt="myongji-club"

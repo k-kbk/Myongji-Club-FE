@@ -63,8 +63,8 @@ export default function Index() {
                 className="inline-block h-[5.5rem] w-full py-4 transition-opacity hover:opacity-50 md:h-24"
               >
                 <div className="block text-base font-semibold sm:hidden md:text-lg">
-                  {item.title.length > 24
-                    ? `${item.title.substring(0, 24)}..`
+                  {item.title.length > 28
+                    ? `${item.title.substring(0, 28)}..`
                     : item.title}
                 </div>
                 <div className="hidden text-base font-semibold sm:block md:text-lg">
