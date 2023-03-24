@@ -1,9 +1,9 @@
 /* eslint-disable react/no-array-index-key */
+import { NoticeType } from '@/types/type';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Notice from '@/types/notice';
 
-const dummy: Array<Notice> = [
+const dummy: Array<NoticeType> = [
   {
     id: 0,
     title: '숨은 정부지원금 찾기의 알림 서비스 종료 안내',
@@ -62,7 +62,7 @@ export default function Index() {
   const noticeId = parseInt(id as string, 10);
 
   return (
-    <div className="flex w-full max-w-screen-lg flex-col px-6 tracking-tight text-gray-700 sm:px-10 md:px-6">
+    <>
       <div className="mb-6 md:mb-8">
         <h1 className="mt-30 mb-2 text-2xl font-bold md:mb-4 md:mt-44 md:text-3xl">
           {dummy[noticeId].title}
@@ -71,10 +71,10 @@ export default function Index() {
           {dummy[noticeId].date}
         </time>
       </div>
-      <div className="mb-6 w-full rounded-xl bg-white px-4 py-4 drop-shadow-sm md:mb-8 md:px-7 md:py-7">
+      <div className="mb-6 w-full rounded-lg bg-white px-4 py-4 drop-shadow-sm md:mb-8 md:px-7 md:py-7">
         {content.map((line, index) => (
           <div key={index}>
-            <p className="break-keep text-base font-medium md:text-lg">
+            <p className="break-keep text-base font-medium md:text-lg ">
               {line}
             </p>
             <br />
@@ -84,11 +84,11 @@ export default function Index() {
       <div className="mb-6 flex justify-end md:mb-8">
         <Link
           href="/notice"
-          className="rounded-lg bg-gray-200 bg-opacity-60 px-4 py-2.5 text-sm font-semibold drop-shadow-sm transition-opacity hover:opacity-50 md:px-4 md:py-3 md:text-base"
+          className="rounded-lg bg-gray-200 bg-opacity-50 px-4 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-sm transition-opacity hover:opacity-50 md:px-4 md:py-3 md:text-base"
         >
           목록으로 돌아가기
         </Link>
       </div>
-    </div>
+    </>
   );
 }

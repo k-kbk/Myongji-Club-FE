@@ -1,7 +1,7 @@
+import { NoticeType } from '@/types/type';
 import Link from 'next/link';
-import Notice from '@/types/notice';
 
-const dummy: Array<Notice> = [
+const dummy: Array<NoticeType> = [
   {
     id: 0,
     title: '숨은 정부지원금 찾기의 알림 서비스 종료 안내',
@@ -46,7 +46,7 @@ const dummy: Array<Notice> = [
 
 export default function Index() {
   return (
-    <div className="flex w-full max-w-screen-lg flex-col px-6 tracking-tight text-gray-700 sm:px-10 lg:px-8">
+    <>
       <h1 className="mt-30 mb-12 text-3xl font-bold md:mt-44 md:text-4.5xl">
         공지사항
       </h1>
@@ -76,6 +76,6 @@ export default function Index() {
           ))}
         </ul>
       )}
-    </div>
+    </>
   );
 }
