@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { ClubType } from '@/types/type';
-import Head from 'next/head';
 import SearchBar from '@/components/home/SearchBar';
 import Club from '@/components/home/Club';
 import Banner from '@/components/home/Banner';
@@ -252,13 +251,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, user-scalable=no"
-        />
-        <title>명지클럽</title>
-      </Head>
       <div className="mt-24 flex flex-col items-center justify-center">
         <Banner />
         <SearchBar value={keyword} onChange={setKeyword} />
