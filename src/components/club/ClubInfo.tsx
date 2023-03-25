@@ -1,6 +1,6 @@
 export default function ClubInfo() {
   return (
-    <div className="mt-4 rounded-lg border border-gray-100 bg-gray-50 px-6 py-4 text-sm font-semibold sm:mt-6 sm:px-8 sm:py-6 sm:text-base">
+    <div className="mt-4 rounded-lg border border-gray-100 bg-gray-50 px-6 py-4 text-base font-semibold sm:mt-6 sm:px-8 sm:py-6 sm:text-lg">
       <div className="sm:mb-2">
         <span className="mb-1 inline-block w-52 sm:mb-0">
           <span className="mr-3 text-gray-400">회장</span>
