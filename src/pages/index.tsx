@@ -258,7 +258,7 @@ export default function Home() {
       <span className="mb-2 text-sm font-medium text-gray-500 md:text-base">
         전체 {filtered.length}개
       </span>
-      <ul className="mb-14 grid grid-cols-2 place-items-center gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 md:gap-6">
+      <ul className="mb-8 grid grid-cols-2 place-items-center gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 md:gap-6">
         {filtered.map((item) => (
           <Club
             key={item.id}

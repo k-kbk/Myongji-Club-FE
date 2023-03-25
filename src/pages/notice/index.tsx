@@ -55,7 +55,7 @@ export default function Index() {
           공지사항이 없어요.
         </div>
       ) : (
-        <ul className="mb-14">
+        <ul className="mb-8">
           {dummy.map((item) => (
             <li key={item.id} className="border-b">
               <Link

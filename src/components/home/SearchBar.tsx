@@ -12,7 +12,7 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
   }
 
   return (
-    <div className="mx-2 mt-4 mb-3 w-full sm:mx-0 sm:mt-6 sm:w-128 md:mb-2">
+    <div className="mx-2 mt-4 mb-4 w-full sm:mx-0 sm:mt-6 sm:w-128 md:mb-2">
       <div className="flex items-center justify-center rounded-lg bg-white text-lg font-semibold shadow-sm sm:text-xl">
         <input
           id="search"

@@ -75,7 +75,7 @@ export default function Index({ noticeId }: { noticeId: number }) {
           </div>
         ))}
       </div>
-      <div className="mb-14 flex justify-end">
+      <div className="mb-8 flex justify-end">
         <Link
           href="/notice"
           className="rounded-lg bg-gray-200 bg-opacity-50 px-4 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-sm transition-opacity hover:opacity-50 md:text-base"
