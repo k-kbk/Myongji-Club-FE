@@ -22,7 +22,7 @@ export default function Club({ id, name, tag, category }: ClubProps) {
   return (
     <li
       key={id}
-      className="flex w-full flex-col rounded-lg bg-white shadow-sm hover:opacity-50"
+      className="flex w-full flex-col rounded-lg bg-white shadow-sm transition-opacity hover:opacity-50"
     >
       <Link
         href={`/club/${id}`}

@@ -15,3 +15,8 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* 탭 하이라이트 */
+a {
+  -webkit-tap-highlight-color: transparent;
+}
