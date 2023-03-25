@@ -18,6 +18,7 @@ export default function Header() {
             quality={100}
             alt="myongji-club"
             priority
+            className="w-32 sm:w-36"
           />
         </Link>
         <div>
