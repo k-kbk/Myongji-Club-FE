@@ -223,7 +223,7 @@ const dummy = [
   },
   {
     id: 37,
-    name: '농어민후생연구회 흙',
+    name: '흙',
     tag: '농활',
     category: '사회연구',
   },
