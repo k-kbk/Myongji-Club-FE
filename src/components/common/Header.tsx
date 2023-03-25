@@ -15,6 +15,7 @@ export default function Header() {
             src="/logo_main.svg"
             width={140}
             height={40}
+            quality={100}
             alt="myongji-club"
             priority
           />

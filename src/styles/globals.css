@@ -17,6 +17,7 @@ html {
 }
 
 /* 탭 하이라이트 */
+input,
 a {
   -webkit-tap-highlight-color: transparent;
 }

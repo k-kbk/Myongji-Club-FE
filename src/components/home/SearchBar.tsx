@@ -24,10 +24,11 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
         />
         <Image
           src="/search.svg"
-          width={1}
-          height={1}
+          width={50}
+          height={50}
+          quality={100}
           alt="search"
-          className="h-9 px-3 py-2 sm:h-10"
+          className="p-3.5 sm:p-3"
           priority
         />
       </div>

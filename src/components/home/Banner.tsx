@@ -7,6 +7,7 @@ export default function Banner() {
         src="hi.svg"
         width={180}
         height={180}
+        quality={100}
         alt="banner"
         priority
         className="mb-2 h-24 md:mx-0 md:h-30"
