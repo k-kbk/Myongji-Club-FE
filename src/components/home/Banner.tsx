@@ -10,7 +10,7 @@ export default function Banner() {
         quality={100}
         alt="banner"
         priority
-        className="mx-2 mb-3 h-24 w-24 md:mb-0 md:h-38 md:w-38"
+        className="mx-2 mb-3 h-26 w-26 md:mb-0 md:h-38 md:w-38"
       />
       <div className="mb-2 md:mx-4 md:mb-0">
         <p className="text-2xl font-bold text-gray-900 md:text-4xl">
