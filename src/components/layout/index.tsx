@@ -17,7 +17,7 @@ export default function Layout({ children }: LayoutProps) {
       <Header />
       <div
         className={`flex w-full max-w-screen-lg flex-col ${
-          removePadding ? 'px-0' : 'px-6'
+          removePadding ? 'px-2' : 'px-6'
         } tracking-tight text-gray-700 sm:px-10 md:px-6`}
       >
         {children}

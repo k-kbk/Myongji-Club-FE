@@ -58,7 +58,7 @@ const content = [
 export default function Index({ noticeId }: { noticeId: number }) {
   return (
     <>
-      <div className="mb-6 px-6 md:mb-8">
+      <div className="mb-6 px-4 md:mb-8">
         <h1 className="mt-30 mb-2 text-2xl font-bold md:mb-4 md:mt-44 md:text-3xl">
           {dummy[noticeId].title}
         </h1>
@@ -66,7 +66,7 @@ export default function Index({ noticeId }: { noticeId: number }) {
           {dummy[noticeId].date}
         </time>
       </div>
-      <div className="mb-6 w-full rounded-lg border border-gray-100 bg-white px-6 py-5 md:mb-8 md:p-7">
+      <div className="mb-6 w-full rounded-lg border border-gray-100 bg-white px-4 py-5 md:mb-8 md:p-7">
         {content.map((line, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <div key={index}>
