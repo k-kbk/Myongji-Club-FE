@@ -26,7 +26,7 @@ export default function Club({ id, name, tag, category }: ClubProps) {
     >
       <Link
         href={`/club/${id}`}
-        className="inline-block w-full py-6 text-center"
+        className="inline-block w-full py-6 text-center md:py-8"
       >
         <span
           className={`mr-1 rounded-lg px-2 py-1 text-xs font-semibold md:text-sm ${deptCaption[category]}`}
