@@ -17,7 +17,7 @@ export default function Banner() {
           명지클럽이 탄생했어요!
         </p>
         <p className="text-base font-semibold text-gray-900 md:text-xl">
-          명지대 동아리의 모든 것을 명지클럽에서 확인하세요.
+          명지대학교 동아리의 모든 것을 명지클럽에서 확인하세요.
         </p>
       </div>
     </div>
