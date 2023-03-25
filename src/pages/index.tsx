@@ -251,11 +251,11 @@ export default function Home() {
 
   return (
     <>
-      <div className="mt-24 flex flex-col items-center justify-center">
+      <div className="mt-22 flex flex-col items-center justify-center sm:mt-28">
         <Banner />
         <SearchBar value={keyword} onChange={setKeyword} />
       </div>
-      <span className="mb-2 text-sm font-medium text-gray-400 md:text-base">
+      <span className="mb-2 text-sm font-medium text-gray-500 md:text-base">
         전체 {filtered.length}개
       </span>
       <ul className="mb-14 grid grid-cols-2 place-items-center gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 md:gap-6">

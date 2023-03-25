@@ -29,11 +29,11 @@ export default function Club({ id, name, tag, category }: ClubProps) {
         className="inline-block w-full py-6 text-center md:py-8"
       >
         <span
-          className={`mr-1 rounded-lg px-2 py-1 text-xs font-semibold md:text-sm ${deptCaption[category]}`}
+          className={`mr-1 rounded-lg px-2 py-1 text-xs font-semibold shadow-sm md:text-sm ${deptCaption[category]}`}
         >
           {category}
         </span>
-        <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-500 md:text-sm">
+        <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-500 shadow-sm md:text-sm">
           {tag}
         </span>
         <div className="mt-4 text-base font-semibold sm:text-lg md:text-xl">
