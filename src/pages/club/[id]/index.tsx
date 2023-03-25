@@ -256,8 +256,8 @@ export default function Index({ clubId }: { clubId: number }) {
   const item = dummy[clubId - 1];
 
   return (
-    <div className="mt-28 w-full rounded-lg bg-white px-4 py-4 shadow-sm sm:mb-14 sm:py-14 sm:px-12">
-      <h1 className="mr-3 inline text-3xl font-bold sm:mr-6 sm:text-4xl">
+    <div className="mt-28 w-full rounded-lg bg-white px-4 py-6 shadow-sm sm:mb-14 sm:py-14 sm:px-12">
+      <h1 className="mr-3 inline text-4xl font-bold sm:mr-6 sm:text-4.5xl">
         {item.name}
       </h1>
       <span
