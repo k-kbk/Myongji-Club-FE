@@ -5,8 +5,8 @@ export default function Banner() {
     <div className="flex h-56 w-full flex-col items-center justify-center rounded-lg bg-indigo-100 px-8 text-center shadow-sm md:h-48 md:flex-row md:px-0 md:text-left">
       <Image
         src="hi.svg"
-        width={1}
-        height={1}
+        width={180}
+        height={180}
         alt="banner"
         priority
         className="mb-2 h-24 md:mx-0 md:h-30"

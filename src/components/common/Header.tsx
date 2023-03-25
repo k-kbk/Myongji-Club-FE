@@ -13,8 +13,8 @@ export default function Header() {
         <Link href="/" className="px-3">
           <Image
             src="/logo.svg"
-            width={1}
-            height={1}
+            width={140}
+            height={40}
             alt="myongji-club"
             priority
           />
