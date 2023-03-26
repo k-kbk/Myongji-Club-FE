@@ -283,13 +283,13 @@ export default function Index({ clubId }: { clubId: number }) {
             height={1000}
             priority
             alt="default"
-            className="w-full rounded-lg border border-gray-100"
+            className="w-full rounded-lg shadow-sm"
           />
         </div>
         <div className="mt-8 text-start text-lg font-bold sm:mt-12 sm:text-xl">
           동아리 소개
         </div>
-        <div className="mt-2 border border-gray-100 bg-white p-5 sm:mt-3 md:rounded-lg md:p-6">
+        <div className="mt-2 rounded-lg bg-white px-5 py-4 shadow-sm sm:mt-3 md:px-6 md:py-5">
           {content.map((line, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <p key={index} className="text-base font-medium sm:text-lg">
@@ -301,7 +301,7 @@ export default function Index({ clubId }: { clubId: number }) {
       <div className="mb-8 flex justify-end">
         <Link
           href="/"
-          className="rounded-lg bg-gray-200 bg-opacity-50 px-4 py-2.5 text-sm font-semibold text-gray-500 drop-shadow-sm transition-opacity hover:opacity-50 md:text-base"
+          className="rounded-lg bg-gray-200 bg-opacity-50 px-4 py-2.5 text-sm font-semibold text-gray-500 shadow-sm transition-opacity hover:opacity-50 md:text-base"
         >
           이전으로 돌아가기
         </Link>
