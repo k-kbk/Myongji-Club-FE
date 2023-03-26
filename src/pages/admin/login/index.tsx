@@ -7,9 +7,9 @@ export default function Index() {
 
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-center">
-      <div className="-mt-20 flex w-full flex-col items-center rounded-lg p-3 sm:mt-4 sm:p-0">
+      <div className="-mt-10 flex w-full flex-col items-center rounded-lg p-3 sm:mt-4 sm:p-0">
         <h1 className="w-full text-3xl font-bold sm:w-104 sm:text-4xl">
-          어드민 로그인
+          Administrator
         </h1>
         <form className="mt-14 w-full sm:mt-20 sm:w-104">
           <Input
