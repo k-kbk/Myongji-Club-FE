@@ -24,16 +24,16 @@ export default function Header() {
         <div>
           <Link
             href="/"
-            className={`rounded-lg px-2.5 py-4 font-bold sm:px-3 ${
-              curPath === '/' ? 'text-indigo-700' : 'text-gray-700'
+            className={`rounded-lg px-2.5 py-4 font-semibold sm:px-3 ${
+              curPath === '/' ? 'text-indigo-700' : 'text-gray-600'
             } mx-1 transition-colors hover:text-indigo-700`}
           >
             홈
           </Link>
           <Link
             href="/notice"
-            className={`rounded-lg px-2.5 py-4 font-bold sm:px-3 ${
-              curPath.includes('notice') ? 'text-indigo-700' : 'text-gray-700'
+            className={`rounded-lg px-2.5 py-4 font-semibold sm:px-3 ${
+              curPath.includes('notice') ? 'text-indigo-700' : 'text-gray-600'
             } mx-1 transition-colors hover:text-indigo-700`}
           >
             공지사항
