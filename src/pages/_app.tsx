@@ -11,6 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no"
         />
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="mask-icon" href="/favicon.svg" color="#FFFFFF" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+        <meta name="description" content="명지대학교 동아리의 모든 것" />
         <title>명지클럽</title>
       </Head>
       <Layout>
