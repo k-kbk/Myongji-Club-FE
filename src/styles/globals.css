@@ -5,16 +5,21 @@
 
 html {
   width: auto;
-  height: auto;
+  height: -webkit-fill-available;
   background-color: rgb(250, 250, 250);
   overflow-y: scroll;
   font-family: 'Pretendard Variable', Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  word-break: keep-all;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  word-break: keep-all;
+}
+
+body {
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 
 /* 탭 하이라이트 */
