@@ -1,6 +1,6 @@
 export default function ClubInfo() {
   return (
-    <div className="mt-4 rounded-lg border border-gray-100 bg-gray-50 px-6 py-4 text-base font-semibold sm:mt-6 sm:px-8 sm:py-6 sm:text-lg">
+    <div className="mt-4 rounded-lg border border-gray-100 bg-white px-5 py-4 text-base font-semibold sm:mt-6 sm:px-8 sm:py-6 sm:text-lg">
       <div>
         <span className="mb-0.5 inline-block w-52">
           <span className="mr-3 inline-block w-14 text-gray-400 sm:w-18">
