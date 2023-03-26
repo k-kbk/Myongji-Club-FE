@@ -62,15 +62,15 @@ export default function Index() {
                 href={`/notice/${item.id}`}
                 className="inline-block h-[5.5rem] w-full py-4 transition-opacity hover:opacity-50 md:h-24"
               >
-                <div className="block text-base font-semibold sm:hidden md:text-lg">
-                  {item.title.length > 28
-                    ? `${item.title.substring(0, 28)}..`
+                <div className="block text-lg font-semibold sm:hidden md:text-xl">
+                  {item.title.length > 25
+                    ? `${item.title.substring(0, 25)}..`
                     : item.title}
                 </div>
-                <div className="hidden text-base font-semibold sm:block md:text-lg">
+                <div className="hidden text-lg font-semibold sm:block md:text-xl">
                   {item.title}
                 </div>
-                <time className="text-sm font-medium text-gray-400 md:text-base">
+                <time className="text-base font-medium text-gray-400 md:text-lg">
                   {item.date}
                 </time>
               </Link>
