@@ -7,11 +7,11 @@ export default function Index() {
 
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-center">
-      <div className="mt-8 flex w-full flex-col items-center rounded-lg p-3 sm:p-0">
+      <div className="-mt-20 flex w-full flex-col items-center rounded-lg p-3 sm:mt-4 sm:p-0">
         <h1 className="w-full text-3xl font-bold sm:w-104 sm:text-4xl">
-          로그인
+          어드민 로그인
         </h1>
-        <form className="mt-18 w-full sm:mt-20 sm:w-104">
+        <form className="mt-14 w-full sm:mt-20 sm:w-104">
           <Input
             label="아이디"
             id="admin-id"
@@ -28,7 +28,7 @@ export default function Index() {
           />
           <button
             type="button"
-            className="mt-22 w-full rounded-lg bg-indigo-600 py-3 text-base font-bold text-white shadow-sm transition-opacity hover:opacity-70 sm:mt-24 sm:text-lg"
+            className="mt-14 w-full rounded-lg bg-indigo-600 py-3 text-base font-bold text-white shadow-sm transition-opacity hover:opacity-70 sm:mt-22 sm:text-lg"
           >
             로그인하기
           </button>
