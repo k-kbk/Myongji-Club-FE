@@ -251,7 +251,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="mt-22 flex flex-col items-center justify-center sm:mt-28">
+      <div className="mt-20 flex flex-col items-center justify-center sm:mt-28">
         <Banner />
         <SearchBar value={keyword} onChange={setKeyword} />
       </div>
