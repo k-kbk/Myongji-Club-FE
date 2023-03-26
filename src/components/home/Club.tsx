@@ -36,9 +36,7 @@ export default function Club({ id, name, tag, category }: ClubProps) {
         <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-500 shadow-sm md:text-sm">
           {tag}
         </span>
-        <div className="mt-4 text-base font-semibold sm:text-lg md:text-xl">
-          {name}
-        </div>
+        <div className="mt-4 text-lg font-semibold md:text-xl">{name}</div>
       </Link>
     </li>
   );

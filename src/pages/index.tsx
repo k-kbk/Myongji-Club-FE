@@ -242,7 +242,11 @@ export default function Home() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setFiltered(
-        dummy.filter((item) => item.name.includes(keyword.toUpperCase())),
+        dummy.filter(
+          (item) =>
+            item.name.includes(keyword.toUpperCase()) ||
+            item.tag.includes(keyword),
+        ),
       );
     }, 300);
 
@@ -255,7 +259,7 @@ export default function Home() {
         <Banner />
         <SearchBar value={keyword} onChange={setKeyword} />
       </div>
-      <span className="mb-2 text-sm font-medium text-gray-500 md:text-base">
+      <span className="mb-2 text-sm font-semibold text-gray-400 md:text-base">
         {filtered.length}개의 동아리
       </span>
       <ul className="mb-8 grid grid-cols-2 place-items-center gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 md:gap-6">
