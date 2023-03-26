@@ -70,7 +70,7 @@ export default function Index() {
                 <div className="hidden text-lg font-semibold sm:block md:text-xl">
                   {item.title}
                 </div>
-                <time className="text-base font-medium text-gray-400 md:text-lg">
+                <time className="text-sm font-medium text-gray-400 md:text-base">
                   {item.date}
                 </time>
               </Link>

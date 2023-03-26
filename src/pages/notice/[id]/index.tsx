@@ -62,7 +62,7 @@ export default function Index({ noticeId }: { noticeId: number }) {
         <h1 className="mt-30 mb-1 text-2xl font-bold md:mb-3 md:mt-40 md:text-3xl">
           {dummy[noticeId].title}
         </h1>
-        <time className="text-lg font-medium text-gray-400 md:text-xl">
+        <time className="text-base font-medium text-gray-400 md:text-lg">
           {dummy[noticeId].date}
         </time>
       </div>
