@@ -2,7 +2,7 @@ export default function ClubInfo() {
   return (
     <div className="mt-4 rounded-lg bg-white px-5 py-4 text-base font-semibold shadow-sm sm:mt-6 sm:px-8 sm:py-6 sm:text-lg">
       <div>
-        <span className="mb-0.5 inline-block w-52">
+        <span className="mb-0.5 inline-block w-72">
           <span className="mr-3 inline-block w-14 text-gray-400 sm:w-18">
             회장
           </span>
@@ -16,7 +16,7 @@ export default function ClubInfo() {
         </span>
       </div>
       <div>
-        <span className="mb-0.5 inline-block w-52">
+        <span className="mb-0.5 inline-block w-72">
           <span className="mr-3 inline-block w-14 text-gray-400 sm:w-18">
             동아리방
           </span>
