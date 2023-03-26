@@ -259,7 +259,7 @@ export default function Index({ clubId }: { clubId: number }) {
   return (
     <>
       <div className="mt-30 mb-8 w-full sm:mt-40">
-        <h1 className="mr-3 inline text-3xl font-bold sm:mr-6 sm:text-4xl">
+        <h1 className="mr-3 inline text-2xl font-bold sm:mr-6 sm:text-3xl">
           {item.name}
         </h1>
         <span
@@ -273,7 +273,7 @@ export default function Index({ clubId }: { clubId: number }) {
           {item.tag}
         </span>
         <ClubInfo />
-        <div className="mt-8 text-start text-lg font-bold sm:mt-12 sm:text-xl">
+        <div className="mt-8 text-start text-base font-bold sm:mt-12 sm:text-lg">
           대표 사진
         </div>
         <div className="mt-2 flex flex-col items-center justify-center sm:mt-3">
@@ -286,7 +286,7 @@ export default function Index({ clubId }: { clubId: number }) {
             className="w-full rounded-lg shadow-sm"
           />
         </div>
-        <div className="mt-8 text-start text-lg font-bold sm:mt-12 sm:text-xl">
+        <div className="mt-8 text-start text-base font-bold sm:mt-12 sm:text-lg">
           동아리 소개
         </div>
         <div className="mt-2 rounded-lg bg-white px-5 py-4 shadow-sm sm:mt-3 md:px-6 md:py-5">
