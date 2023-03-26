@@ -6,7 +6,7 @@ export default function Index() {
   const [adminPw, setAdminPw] = useState<string>('');
 
   return (
-    <div className="flex h-[88vh] w-full flex-col items-center justify-center">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center">
       <div className="mt-8 flex w-full flex-col items-center rounded-lg p-3 sm:p-0">
         <h1 className="w-full text-3xl font-bold sm:w-104 sm:text-4xl">
           로그인
