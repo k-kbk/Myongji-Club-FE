@@ -256,7 +256,7 @@ export default function Home() {
         <SearchBar value={keyword} onChange={setKeyword} />
       </div>
       <span className="mb-2 text-sm font-medium text-gray-500 md:text-base">
-        전체 {filtered.length}개
+        {filtered.length}개의 동아리
       </span>
       <ul className="mb-8 grid grid-cols-2 place-items-center gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 md:gap-6">
         {filtered.map((item) => (

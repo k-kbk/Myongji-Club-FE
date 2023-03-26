@@ -15,7 +15,10 @@ export default function Input({ label, id, type, value, onClick }: InputProps) {
 
   return (
     <div className="mb-3">
-      <label htmlFor={id} className="flex flex-col font-semibold text-gray-600">
+      <label
+        htmlFor={id}
+        className="flex flex-col text-sm font-semibold text-gray-600 sm:text-base"
+      >
         {label}
         <input
           id={id}
