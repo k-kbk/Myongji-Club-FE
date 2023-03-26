@@ -5,7 +5,7 @@
 
 html {
   width: auto;
-  height: -webkit-fill-available;
+  height: auto;
   background-color: rgb(250, 250, 250);
   overflow-y: scroll;
   font-family: 'Pretendard Variable', Pretendard, -apple-system,
@@ -15,11 +15,6 @@ html {
   word-break: keep-all;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
 }
 
 /* 탭 하이라이트 */
