@@ -6,6 +6,7 @@ export default function Header() {
   const router = useRouter();
   /** 현재 경로 */
   const curPath = router.pathname;
+  const isAdmin = curPath.startsWith('/admin');
 
   return (
     <header className="fixed z-10 flex h-[3.75rem] w-full items-center justify-center bg-white px-3 shadow-sm sm:h-16 sm:px-4">
@@ -21,24 +22,26 @@ export default function Header() {
             className="w-32 sm:w-36"
           />
         </Link>
-        <div>
-          <Link
-            href="/"
-            className={`rounded-lg px-2.5 py-4 font-semibold sm:px-3 ${
-              curPath === '/' ? 'text-indigo-700' : 'text-gray-600'
-            } mx-1 transition-colors hover:text-indigo-700`}
-          >
-            홈
-          </Link>
-          <Link
-            href="/notice"
-            className={`rounded-lg px-2.5 py-4 font-semibold sm:px-3 ${
-              curPath.includes('notice') ? 'text-indigo-700' : 'text-gray-600'
-            } mx-1 transition-colors hover:text-indigo-700`}
-          >
-            공지사항
-          </Link>
-        </div>
+        {!isAdmin && (
+          <div>
+            <Link
+              href="/"
+              className={`rounded-lg px-2.5 py-4 font-semibold sm:px-3 ${
+                curPath === '/' ? 'text-indigo-700' : 'text-gray-600'
+              } mx-1 transition-colors hover:text-indigo-700`}
+            >
+              홈
+            </Link>
+            <Link
+              href="/notice"
+              className={`rounded-lg px-2.5 py-4 font-semibold sm:px-3 ${
+                curPath.includes('notice') ? 'text-indigo-700' : 'text-gray-600'
+              } mx-1 transition-colors hover:text-indigo-700`}
+            >
+              공지사항
+            </Link>
+          </div>
+        )}
       </div>
     </header>
   );
