@@ -270,7 +270,7 @@ export default function Index() {
               </div>
               <button
                 type="button"
-                className="ml-1 rounded-lg bg-red-200 bg-opacity-50 px-3 py-1 text-sm font-semibold text-red-500 shadow-sm transition-opacity hover:opacity-50 sm:py-1 sm:text-base"
+                className="ml-1 rounded-lg bg-red-200 bg-opacity-50 px-3 py-1.5 text-sm font-semibold text-red-500 shadow-sm transition-opacity hover:opacity-50 sm:text-base"
               >
                 삭제
               </button>
