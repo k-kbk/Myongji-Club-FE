@@ -241,12 +241,12 @@ export default function Index() {
 
   return (
     <>
-      <div className="mt-20 mb-8 sm:mt-32">
+      <div className="mt-24 mb-8 sm:mt-30">
         {/* <h1 className="text-3xl font-bold sm:text-4xl">동아리 관리</h1> */}
-        <div className="flex flex-col items-center justify-between rounded-lg bg-white px-4 py-8 shadow-sm sm:flex-row sm:py-9 sm:px-6">
-          <div className="flex flex-col items-center text-1.5xl font-bold sm:flex-row sm:text-2.5xl">
+        <div className="flex flex-col items-center justify-between border-y py-8 sm:flex-row sm:py-10">
+          <div className="flex flex-col items-center text-1.5xl font-bold sm:flex-row sm:text-3xl">
             <div>안녕하세요,</div>
-            <div className="sm:ml-2"> 총동아리연합회 님!</div>
+            <div className="sm:ml-2">총동아리연합회 님!</div>
           </div>
           <button
             type="button"
