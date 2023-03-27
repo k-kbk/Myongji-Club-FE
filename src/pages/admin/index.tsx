@@ -239,12 +239,12 @@ export default function Index() {
       <div className="flex items-end justify-end">
         <button
           type="button"
-          className="mt-6 rounded-lg bg-indigo-200 bg-opacity-50 px-3 py-2 text-sm font-bold text-indigo-500 shadow-sm transition-opacity hover:opacity-50 sm:px-4 sm:py-2 sm:text-base"
+          className="mt-6 rounded-lg bg-indigo-200 bg-opacity-50 px-3 py-2 text-base font-bold text-indigo-500 shadow-sm transition-opacity hover:opacity-50 sm:px-4 sm:py-2 sm:text-lg"
         >
           동아리 추가하기
         </button>
       </div>
-      <ul className="mt-4 grid grid-cols-1 gap-4 sm:mt-4 md:mt-5 md:grid-cols-2 md:gap-5">
+      <ul className="mt-4 grid grid-cols-1 gap-3 sm:mt-4 md:mt-5 md:grid-cols-2 md:gap-4">
         {dummy.map((item) => (
           <li
             key={item.id}
