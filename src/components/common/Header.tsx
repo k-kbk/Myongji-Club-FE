@@ -41,7 +41,7 @@ export default function Header() {
       <div className="flex w-full max-w-screen-lg items-center justify-between">
         <Link href={navItems[isAdmin][0].href} className="px-3">
           <Image
-            src="/logo.png"
+            src="/logo_main.png"
             width={800}
             height={180}
             quality={100}
@@ -57,9 +57,9 @@ export default function Header() {
                 <Link
                   key={item.id}
                   href={item.href}
-                  className={`rounded-lg px-2.5 py-4 font-semibold sm:px-3 ${
-                    curPath === item.href ? 'text-indigo-700' : 'text-gray-600'
-                  } mx-1 transition-colors hover:text-indigo-700`}
+                  className={`rounded-lg px-2.5 py-4 font-bold sm:px-3 ${
+                    curPath === item.href ? 'text-indigo-500' : 'text-gray-600'
+                  } mx-1 transition-colors hover:text-indigo-500`}
                 >
                   {item.name}
                 </Link>

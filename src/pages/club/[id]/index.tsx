@@ -236,13 +236,13 @@ const dummy = [
 ];
 
 const deptCaption: DeptCaptionType = {
-  학술: 'bg-green-100 text-green-500',
-  언행예술: 'bg-orange-100 text-orange-500',
-  봉사: 'bg-yellow-100 text-yellow-500',
-  전시창작: 'bg-purple-100 text-purple-500',
-  종교: 'bg-blue-100 text-blue-500',
-  체육: 'bg-red-100 text-red-500',
-  사회연구: 'bg-cyan-100 text-cyan-500',
+  학술: 'bg-green-100 text-green-600',
+  언행예술: 'bg-orange-100 text-orange-600',
+  봉사: 'bg-yellow-100 text-yellow-600',
+  전시창작: 'bg-purple-100 text-purple-600',
+  종교: 'bg-blue-100 text-blue-600',
+  체육: 'bg-red-100 text-red-600',
+  사회연구: 'bg-cyan-100 text-cyan-600',
 };
 
 const content = [
@@ -269,7 +269,7 @@ export default function Index({ clubId }: { clubId: number }) {
         >
           {item.category}
         </span>
-        <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-sm font-semibold text-gray-500 shadow-sm sm:text-base">
+        <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-sm font-semibold text-gray-600 shadow-sm sm:text-base">
           {item.tag}
         </span>
         <ClubInfo />
@@ -301,7 +301,7 @@ export default function Index({ clubId }: { clubId: number }) {
       <div className="mb-8 flex justify-end">
         <Link
           href="/"
-          className="rounded-lg bg-gray-200 bg-opacity-50 px-4 py-2.5 text-sm font-semibold text-gray-500 shadow-sm transition-opacity hover:opacity-50 md:text-base"
+          className="rounded-lg bg-gray-200 bg-opacity-50 px-4 py-2.5 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 md:text-base"
         >
           이전으로 돌아가기
         </Link>
