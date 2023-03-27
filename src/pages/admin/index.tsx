@@ -239,7 +239,7 @@ export default function Index() {
       <div className="flex items-end justify-end">
         <button
           type="button"
-          className="mt-6 rounded-lg bg-indigo-200 bg-opacity-50 px-3 py-2 text-base font-bold text-indigo-500 shadow-sm transition-opacity hover:opacity-50 sm:px-4 sm:py-2 sm:text-lg"
+          className="mt-6 rounded-lg bg-indigo-200 bg-opacity-50 px-3 py-2 text-sm font-bold text-indigo-500 shadow-sm transition-opacity hover:opacity-50 sm:px-4 sm:py-2 sm:text-base"
         >
           동아리 추가하기
         </button>
