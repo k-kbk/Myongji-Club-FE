@@ -11,7 +11,7 @@ export default function Index() {
         <h1 className="w-full text-3xl font-bold sm:w-104 sm:text-4xl">
           Administrator
         </h1>
-        <form className="mt-14 w-full sm:mt-20 sm:w-104">
+        <form className="mt-14 w-full sm:mt-18 sm:w-104">
           <Input
             label="아이디"
             id="admin-id"
@@ -28,7 +28,7 @@ export default function Index() {
           />
           <button
             type="button"
-            className="mt-14 w-full rounded-lg bg-indigo-600 py-3 text-base font-bold text-white shadow-sm transition-opacity hover:opacity-70 sm:mt-22 sm:text-lg"
+            className="mt-14 w-full rounded-lg bg-indigo-600 py-3 text-base font-bold text-white shadow-sm transition-opacity hover:opacity-70 sm:mt-20 sm:text-lg"
           >
             로그인하기
           </button>
