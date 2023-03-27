@@ -39,7 +39,7 @@ export default function Header() {
   return (
     <header className="fixed z-10 flex h-[3.75rem] w-full items-center justify-center bg-white px-3 shadow-sm sm:h-16 sm:px-4">
       <div className="flex w-full max-w-screen-lg items-center justify-between">
-        <Link href="/" className="px-3">
+        <Link href={navItems[isAdmin][0].href} className="px-3">
           <Image
             src="/logo.png"
             width={800}
