@@ -18,8 +18,8 @@ const navItems = {
   admin: [
     {
       id: 11,
-      name: '동아리',
-      href: '/admin/club',
+      name: '동아리 관리',
+      href: '/admin',
     },
     {
       id: 12,
