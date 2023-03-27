@@ -232,7 +232,7 @@ const dummy = [
 export default function Index() {
   return (
     <div className="mt-26 mb-8 sm:mt-40">
-      <div className="text-base font-bold text-gray-500 sm:text-lg">
+      <div className="text-base font-semibold text-gray-500 sm:text-lg">
         안녕하세요, 총동아리연합회 님!
       </div>
       <h1 className="text-3xl font-bold sm:text-4xl">동아리 관리</h1>
