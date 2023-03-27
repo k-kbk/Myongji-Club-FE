@@ -13,7 +13,6 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="icon" href="/favicon.svg" />
         <link rel="mask-icon" href="/favicon.svg" color="#FFFFFF" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="description" content="명지대학교 동아리의 모든 것" />
         <title>명지클럽</title>
       </Head>
