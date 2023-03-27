@@ -16,6 +16,8 @@ module.exports = {
       },
       colors: {},
       fontSize: {
+        '1.5xl': ['1.375rem', '1.75rem'],
+        '2.5xl': ['1.75rem', '2rem'],
         '3.5xl': ['2rem', '2.25rem'],
         '4.5xl': ['2.5rem', '2.5rem'],
       },

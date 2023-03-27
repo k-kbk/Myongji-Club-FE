@@ -1,3 +1,6 @@
+import ClubFormModal from '@/components/admin-club/ClubFormModal';
+import { useState } from 'react';
+
 const dummy = [
   {
     id: 1,
@@ -230,46 +233,52 @@ const dummy = [
 ];
 
 export default function Index() {
+  const [renderModal, setRenderModal] = useState<boolean>(false);
+
+  function handleClickModal() {
+    setRenderModal((prev) => !prev);
+  }
+
   return (
-    <div className="mt-26 mb-8 sm:mt-40">
-      <div className="text-base font-semibold text-gray-500 sm:text-lg">
-        안녕하세요, 총동아리연합회 님!
-      </div>
-      <h1 className="text-3xl font-bold sm:text-4xl">동아리 관리</h1>
-      <div className="flex items-end justify-end">
-        <button
-          type="button"
-          className="mt-6 rounded-lg bg-indigo-200 bg-opacity-50 px-3 py-2 text-sm font-bold text-indigo-500 shadow-sm transition-opacity hover:opacity-50 sm:px-4 sm:py-2 sm:text-base"
-        >
-          동아리 추가하기
-        </button>
-      </div>
-      <ul className="mt-4 grid grid-cols-1 gap-3 sm:mt-4 md:mt-5 md:grid-cols-2 md:gap-4">
-        {dummy.map((item) => (
-          <li
-            key={item.id}
-            className="flex items-center justify-between rounded-lg bg-white py-4 px-4 shadow-sm sm:py-5 sm:px-6"
+    <>
+      <div className="mt-20 mb-8 sm:mt-32">
+        {/* <h1 className="text-3xl font-bold sm:text-4xl">동아리 관리</h1> */}
+        <div className="flex flex-col items-center justify-between rounded-lg bg-white px-4 py-8 shadow-sm sm:flex-row sm:py-9 sm:px-6">
+          <div className="flex flex-col items-center text-1.5xl font-bold sm:flex-row sm:text-2.5xl">
+            <div>안녕하세요,</div>
+            <div className="sm:ml-2"> 총동아리연합회 님!</div>
+          </div>
+          <button
+            type="button"
+            className="mt-4 rounded-lg bg-indigo-200 bg-opacity-50 px-3 py-2 text-sm font-bold text-indigo-500 shadow-sm transition-opacity hover:opacity-50 sm:mt-0 sm:px-4 sm:py-2 sm:text-base"
+            onClick={handleClickModal}
           >
-            <div className="text-base font-semibold sm:text-lg">
-              {item.name}
-            </div>
-            <div>
+            신규 동아리 등록하기
+          </button>
+        </div>
+        <div className="mb-2 mt-8 text-sm font-semibold text-gray-400 sm:mt-14 md:text-base">
+          전체 동아리 목록
+        </div>
+        <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5">
+          {dummy.map((item) => (
+            <li
+              key={item.id}
+              className="flex items-center justify-between rounded-lg bg-white py-5 px-4 shadow-sm sm:py-5 sm:px-6"
+            >
+              <div className="text-base font-semibold sm:text-lg">
+                {item.name}
+              </div>
               <button
                 type="button"
-                className="mr-1 rounded-lg bg-gray-200 bg-opacity-50 px-3 py-1 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:py-2 sm:text-base"
-              >
-                수정
-              </button>
-              <button
-                type="button"
-                className="ml-1 rounded-lg bg-red-100 bg-opacity-50 px-3 py-1 text-sm font-semibold text-red-600 shadow-sm transition-opacity hover:opacity-50 sm:py-2 sm:text-base"
+                className="ml-1 rounded-lg bg-red-200 bg-opacity-50 px-3 py-1 text-sm font-semibold text-red-500 shadow-sm transition-opacity hover:opacity-50 sm:py-1 sm:text-base"
               >
                 삭제
               </button>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {renderModal && <ClubFormModal setState={setRenderModal} />}
+    </>
   );
 }
