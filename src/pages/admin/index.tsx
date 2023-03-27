@@ -250,7 +250,7 @@ export default function Index() {
           </div>
           <button
             type="button"
-            className="mt-4 rounded-lg bg-indigo-200 bg-opacity-50 px-3 py-2 text-sm font-bold text-indigo-500 shadow-sm transition-opacity hover:opacity-50 sm:mt-0 sm:px-4 sm:py-2 sm:text-base"
+            className="mt-4 rounded-lg bg-indigo-200 bg-opacity-50 px-3 py-2 text-base font-bold text-indigo-500 shadow-sm transition-opacity hover:opacity-50 sm:mt-0 sm:px-4 sm:py-2"
             onClick={handleClickModal}
           >
             신규 동아리 등록하기
