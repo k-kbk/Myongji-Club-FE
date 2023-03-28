@@ -26,7 +26,7 @@ export default function Club({ id, name, tag, category }: ClubProps) {
     >
       <Link
         href={`/club/${id}`}
-        className="inline-block w-full py-5 text-center md:py-6"
+        className="inline-block w-full py-6 text-center md:py-8"
       >
         <span
           className={`mr-1 rounded-lg px-2 py-1 text-xs font-semibold shadow-sm md:text-sm ${deptCaption[category]}`}
@@ -36,12 +36,7 @@ export default function Club({ id, name, tag, category }: ClubProps) {
         <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-500 shadow-sm md:text-sm">
           {tag}
         </span>
-        <div className="mt-3 text-base font-semibold sm:mt-4 md:text-lg">
-          {name}
-        </div>
-        <div className="mt-1.5 text-sm font-bold text-blue-500 sm:mt-2 md:text-base">
-          모집 중
-        </div>
+        <div className="mt-4 text-base font-semibold md:text-lg">{name}</div>
       </Link>
     </li>
   );
