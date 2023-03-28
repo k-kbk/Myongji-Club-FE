@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 const navItems = {
   user: [
@@ -28,7 +29,7 @@ const navItems = {
     },
     {
       id: 13,
-      name: '공지사항',
+      name: '공지사항 관리',
       href: '/admin/notice',
     },
   ],
@@ -40,6 +41,12 @@ export default function Header() {
   const curPath = router.pathname;
   const isAdmin = curPath.startsWith('/admin') ? 'admin' : 'user';
   const isAdminLogin = curPath === '/admin/login';
+
+  const [isClicked, setIsClicked] = useState<boolean>(false);
+
+  function handleClick() {
+    setIsClicked((prev) => !prev);
+  }
 
   return (
     <header className="fixed z-10 flex h-[3.75rem] w-full items-center justify-center bg-white px-3 shadow-sm sm:h-16 sm:px-4">
@@ -55,7 +62,40 @@ export default function Header() {
             className="w-32 sm:w-36"
           />
         </Link>
-        <nav>
+        {isClicked ? (
+          <button
+            type="button"
+            className="block px-3 py-3.5 sm:hidden"
+            onClick={handleClick}
+          >
+            <Image
+              src="/close.png"
+              width={96}
+              height={96}
+              quality={100}
+              priority
+              alt="menu"
+              className="w-7"
+            />
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="block px-3 py-4 sm:hidden"
+            onClick={handleClick}
+          >
+            <Image
+              src="/menu.png"
+              width={96}
+              height={96}
+              quality={100}
+              priority
+              alt="menu"
+              className="w-6"
+            />
+          </button>
+        )}
+        <nav className="hidden sm:block">
           {navItems[isAdmin].map(
             (item) =>
               !isAdminLogin && (
