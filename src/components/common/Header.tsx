@@ -57,15 +57,15 @@ export default function Header() {
             width={800}
             height={180}
             quality={100}
-            alt="myongji-club"
             priority
+            alt="myongji-club"
             className="w-32 sm:w-36"
           />
         </Link>
         {isClicked ? (
           <button
             type="button"
-            className="block px-3 py-3.5 sm:hidden"
+            className="block px-3 py-4 sm:hidden"
             onClick={handleClick}
           >
             <Image
@@ -75,7 +75,7 @@ export default function Header() {
               quality={100}
               priority
               alt="menu"
-              className="w-7"
+              className="w-6"
             />
           </button>
         ) : (
