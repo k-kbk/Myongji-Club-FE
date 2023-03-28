@@ -79,7 +79,7 @@ export default function ClubFormModal({ setState }: ClubFormModalType) {
               </button>
               <button
                 type="button"
-                className="ml-1 rounded-lg bg-indigo-200 bg-opacity-50 px-4 py-2 font-bold text-indigo-500 hover:opacity-50"
+                className="ml-1 rounded-lg bg-blue-200 bg-opacity-50 px-4 py-2 font-bold text-blue-500 hover:opacity-50"
               >
                 추가하기
               </button>

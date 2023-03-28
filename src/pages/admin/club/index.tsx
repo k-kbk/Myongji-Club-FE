@@ -1,8 +1,4 @@
-import { DeptCaptionType } from '@/types/type';
-import { GetServerSideProps } from 'next/types';
-import ClubInfo from '@/components/club/ClubInfo';
-import Image from 'next/image';
-import Link from 'next/link';
+// import { useState } from 'react';
 
 const dummy = [
   {
@@ -235,89 +231,54 @@ const dummy = [
   },
 ];
 
-const deptCaption: DeptCaptionType = {
-  학술: 'bg-green-100 text-green-600',
-  언행예술: 'bg-orange-100 text-orange-600',
-  봉사: 'bg-yellow-100 text-yellow-600',
-  전시창작: 'bg-purple-100 text-purple-600',
-  종교: 'bg-blue-100 text-blue-600',
-  체육: 'bg-pink-100 text-pink-600',
-  사회연구: 'bg-cyan-100 text-cyan-600',
-};
+export default function Index() {
+  // const [renderModal, setRenderModal] = useState<boolean>(false);
 
-const content = [
-  '안녕하세요 명지서법입니다!',
-  '저희는 47년 정통 동아리로, 명지대학교에서 가장 넓은 동아리 방을 사용 중이에요!',
-  '매주 수요일마다 강습회를 진행 중이고 선생님께서 직접 지도해주십니다.',
-  '또한, 매년 두 번의 전시회를 진행하고 있으며 간식 행사, 인사동 나들이 등 다양한 활동도 진행할 예정이에요.',
-  '편하고 따뜻한 분위기에서 서예를 쓰고 싶은 학우들 모두 환영합니다!',
-];
-
-export default function Index({ clubId }: { clubId: number }) {
-  const item = dummy[clubId - 1];
+  // function handleClickModal() {
+  //   setRenderModal((prev) => !prev);
+  // }
 
   return (
     <>
-      <div className="mt-30 mb-8 w-full sm:mt-40">
-        <h1 className="mr-3 inline text-2xl font-bold sm:mr-6 sm:text-3xl">
-          {item.name}
-        </h1>
-        <span
-          className={`mr-1 rounded-lg px-2 py-1 text-sm font-semibold shadow-sm sm:text-base ${
-            deptCaption[item.category]
-          }`}
-        >
-          {item.category}
-        </span>
-        <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-sm font-semibold text-gray-600 shadow-sm sm:text-base">
-          {item.tag}
-        </span>
-        <ClubInfo />
-        <div className="mt-8 text-start text-base font-bold sm:mt-12 sm:text-lg">
-          대표 사진
+      <div className="mt-30 mb-8 sm:mt-44">
+        <div className="flex justify-between">
+          <h1 className="text-3xl font-bold sm:text-4xl">동아리 관리하기</h1>
+          <button
+            type="button"
+            className="hidden rounded-lg bg-gray-200 bg-opacity-70 px-3 py-1.5 text-base font-bold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:mt-0 sm:block sm:px-4 sm:py-2"
+          >
+            신규 동아리 등록하기
+          </button>
+          <button
+            type="button"
+            className="block rounded-lg bg-gray-200 bg-opacity-70 px-3 py-1.5 text-base font-bold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:mt-0 sm:hidden sm:px-4 sm:py-2"
+          >
+            등록하기
+          </button>
         </div>
-        <div className="mt-2 flex flex-col items-center justify-center sm:mt-3">
-          <Image
-            src="/default.svg"
-            width={1000}
-            height={1000}
-            priority
-            alt="default"
-            className="w-full rounded-lg shadow-sm"
-          />
+        <div className="mb-2 mt-12 text-sm font-semibold text-gray-400 sm:mt-16 md:text-base">
+          전체 동아리 목록
         </div>
-        <div className="mt-8 text-start text-base font-bold sm:mt-12 sm:text-lg">
-          동아리 소개
-        </div>
-        <div className="mt-2 rounded-lg bg-white px-5 py-4 shadow-sm sm:mt-3 md:px-6 md:py-5">
-          {content.map((line, index) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <p key={index} className="text-base font-medium sm:text-lg">
-              {line}
-            </p>
+        <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-5">
+          {dummy.map((item) => (
+            <li
+              key={item.id}
+              className="flex items-center justify-between rounded-lg bg-white py-3.5 px-4 shadow-sm sm:py-4 sm:px-6"
+            >
+              <div className="text-base font-semibold sm:text-lg">
+                {item.name}
+              </div>
+              <button
+                type="button"
+                className="rounded-lg bg-red-200 bg-opacity-50 px-3 py-1.5 text-sm font-semibold text-red-500 shadow-sm transition-opacity hover:opacity-50 sm:text-base"
+              >
+                삭제
+              </button>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
-      <div className="mb-8 flex justify-end">
-        <Link
-          href="/"
-          className="rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2.5 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 md:text-base"
-        >
-          이전으로 돌아가기
-        </Link>
-      </div>
+      {/* {renderModal && <ClubFormModal setState={setRenderModal} />} */}
     </>
   );
 }
-
-export const getServerSideProps: GetServerSideProps = async (context: {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  query: any;
-}) => {
-  const { id } = context.query;
-  return {
-    props: {
-      clubId: id,
-    },
-  };
-};
