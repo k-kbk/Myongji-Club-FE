@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Banner() {
   return (
-    <div className="flex h-56 w-full flex-col items-center justify-center rounded-lg bg-indigo-100 px-8 text-center shadow-sm md:h-48 md:flex-row md:px-0 md:text-left">
+    <div className="flex h-56 w-full flex-col items-center justify-center rounded-lg bg-blue-100 px-8 text-center shadow-sm md:h-48 md:flex-row md:px-0 md:text-left">
       <Image
         src="/hearts.png"
         width={600}

@@ -25,7 +25,7 @@ export default function Input({ label, id, type, value, onClick }: InputProps) {
           type={type}
           spellCheck={false}
           value={value}
-          className="mt-1 rounded-lg border border-gray-200 px-3 py-2 text-base font-medium text-gray-800 outline-none sm:text-lg"
+          className="mt-1 rounded-lg border px-3 py-2 text-base font-medium text-gray-800 outline-none sm:text-lg"
           onChange={handleChange}
         />
       </label>

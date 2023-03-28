@@ -17,7 +17,7 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
         <input
           id="search"
           type="text"
-          className="spl-4 w-full rounded-lg py-2 pl-4 outline-none sm:py-3 sm:pl-5"
+          className="w-full rounded-lg py-2 pl-4 outline-none sm:py-3 sm:pl-5"
           value={value}
           spellCheck={false}
           onChange={handleChange}
