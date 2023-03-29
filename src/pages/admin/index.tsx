@@ -4,8 +4,8 @@ export default function Index() {
   return (
     <>
       <div className="mt-24 rounded-lg bg-white py-5 px-5 shadow-sm sm:mt-28 sm:py-10 sm:px-8">
-        <h1 className="text-lg font-bold sm:text-2.5xl">
-          안녕하세요, <span className="text-blue-500">총동아리연합회</span>님!
+        <h1 className="text-xl font-bold sm:text-2xl">
+          안녕하세요, <span className="text-blue-500">총동아리연합회</span> 님!
         </h1>
       </div>
       <div className="mb-2 mt-8 text-sm font-semibold text-gray-400 sm:mt-16 md:text-base">
@@ -14,7 +14,7 @@ export default function Index() {
       <div className="mb-8 flex flex-col justify-between text-lg font-bold text-gray-700 sm:flex-row sm:text-2xl">
         <Link
           href="/admin/club"
-          className="mb-4 w-full rounded-lg bg-white py-4 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
+          className="mb-3 w-full rounded-lg bg-white py-4 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
         >
           동아리 관리하기
           <p className="mt-2 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">
@@ -26,7 +26,7 @@ export default function Index() {
         </Link>
         <Link
           href="/admin/notice"
-          className="mb-4 w-full rounded-lg bg-white py-4 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
+          className="mb-3 w-full rounded-lg bg-white py-4 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
         >
           OOO 공지사항 작성하기
           <p className="mt-2 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">
@@ -38,7 +38,7 @@ export default function Index() {
         </Link>
         <Link
           href="/admin/notice"
-          className="mb-4 w-full rounded-lg bg-white py-4 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
+          className="mb-3 w-full rounded-lg bg-white py-4 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
         >
           동아리 공지사항 작성하기
           <p className="mt32 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">

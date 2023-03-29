@@ -259,7 +259,7 @@ export default function Index() {
     <>
       <div className="mt-30 mb-8 sm:mt-44">
         <div className="flex justify-between">
-          <h1 className="text-3xl font-bold sm:text-4xl">동아리 관리하기</h1>
+          <h1 className="text-2xl font-bold sm:text-3xl">동아리 관리하기</h1>
           <button
             type="button"
             className="hidden rounded-lg bg-gray-200 bg-opacity-70 px-5 py-2.5 text-base font-bold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:block"
