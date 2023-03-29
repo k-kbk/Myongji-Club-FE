@@ -82,7 +82,7 @@ export default function Header() {
               />
             </button>
           )}
-          <nav className="hidden font-semibold sm:block sm:text-lg">
+          <nav className="hidden font-semibold sm:block">
             {navItems[pathStartsWith].map(
               (item) =>
                 !isPathAdminLogin && (
