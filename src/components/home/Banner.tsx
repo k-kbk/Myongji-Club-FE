@@ -16,7 +16,7 @@ export default function Banner() {
         <p className="mb-0.5 text-2xl font-bold text-gray-900 md:text-4xl">
           명아리가 탄생했어요!
         </p>
-        <p className="text-lg font-semibold leading-5 text-gray-900 md:text-xl">
+        <p className="text-base font-semibold leading-5 text-gray-900 md:text-xl">
           명지대학교 동아리의 모든 것을 명아리에서 확인해 보세요.
         </p>
       </div>
