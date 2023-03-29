@@ -26,7 +26,7 @@ html::-webkit-scrollbar {
 }
 
 /* 탭 하이라이트 */
-/* input,
+input,
 a {
   -webkit-tap-highlight-color: transparent;
-} */
+}
