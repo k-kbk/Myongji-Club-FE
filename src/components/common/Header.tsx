@@ -95,14 +95,14 @@ export default function Header() {
             />
           </button>
         )}
-        <nav className="hidden sm:block">
+        <nav className="hidden font-semibold sm:block sm:text-lg">
           {navItems[isAdmin].map(
             (item) =>
               !isAdminLogin && (
                 <Link
                   key={item.id}
                   href={item.href}
-                  className={`rounded-lg px-2.5 py-4 font-bold sm:px-3 ${
+                  className={`rounded-lg px-2.5 py-4 sm:px-3 ${
                     curPath === item.href ? 'text-blue-600' : 'text-gray-600'
                   } mx-1 transition-colors hover:text-blue-600`}
                 >
