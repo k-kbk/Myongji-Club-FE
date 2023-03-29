@@ -302,11 +302,8 @@ export default function Index() {
             <div className="mt-2 flex h-52 w-full flex-col justify-between rounded-lg border border-gray-100 bg-white py-8 px-6 sm:h-60 sm:w-128 sm:py-10 sm:px-10">
               <div className="ml-2 mt-1 text-gray-800">
                 <div className="text-lg font-bold leading-5 sm:text-xl sm:leading-6">
-                  <span>동아리</span>
-                  <span className="ml-1.5 text-blue-500">
-                    {selectedClub?.name}
-                  </span>
-                  <span>을(를) 삭제할까요?</span>
+                  <span className=" text-blue-500">{selectedClub?.name}</span>
+                  <span>을(를) 동아리 목록에서 삭제할까요?</span>
                 </div>
                 <p className="text-base font-semibold text-gray-500 sm:text-lg">
                   동아리 계정도 함께 삭제돼요.
