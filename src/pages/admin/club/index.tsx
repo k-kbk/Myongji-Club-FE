@@ -309,7 +309,7 @@ export default function Index() {
                   OOO 계정도 함께 삭제돼요.
                 </p>
               </div>
-              <div className="font-sm sm:font-base flex justify-between font-semibold">
+              <div className="flex justify-between text-sm font-semibold sm:text-base">
                 <button
                   type="button"
                   className="w-[48%] rounded-lg bg-gray-200 bg-opacity-70 py-2.5 text-gray-600 transition-opacity hover:opacity-50 sm:py-3"

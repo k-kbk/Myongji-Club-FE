@@ -41,7 +41,7 @@ export default function Index() {
           className="mb-3 w-full rounded-lg bg-white py-4 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
         >
           동아리 공지사항 작성하기
-          <p className="mt32 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">
+          <p className="mt-2 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">
             동아리(혹은 동아리 회장)에게 전달할
           </p>
           <p className="text-sm font-medium leading-tight text-gray-500 sm:text-base sm:leading-snug">
