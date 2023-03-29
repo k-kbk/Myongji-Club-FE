@@ -47,7 +47,7 @@ const dummy: Array<NoticeType> = [
 export default function Index() {
   return (
     <>
-      <h1 className="mt-30 mb-12 text-3xl font-bold md:mt-44 md:text-4xl">
+      <h1 className="mt-30 mb-12 text-2xl font-bold sm:mt-44 sm:text-3xl">
         공지사항
       </h1>
       {dummy.length === 0 ? (

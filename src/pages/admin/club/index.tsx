@@ -268,7 +268,7 @@ export default function Index() {
           </button>
           <button
             type="button"
-            className="block rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2 text-base font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:hidden"
+            className="block rounded-lg bg-gray-200 bg-opacity-70 px-4 py-1.5 text-base font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:hidden"
           >
             등록하기
           </button>
