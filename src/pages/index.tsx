@@ -259,7 +259,7 @@ export default function Home() {
         <Banner />
         <SearchBar value={keyword} onChange={setKeyword} />
       </div>
-      <span className="mb-2 text-sm font-semibold text-gray-400 sm:px-4 md:text-base">
+      <span className="mb-2 text-sm font-semibold text-gray-500 sm:px-4 md:text-base">
         {filtered.length}개의 동아리
       </span>
       <ul className="mb-8 grid grid-cols-1 place-items-center gap-3 sm:grid-cols-2 sm:px-4 md:gap-5 lg:grid-cols-4">

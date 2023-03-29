@@ -26,9 +26,9 @@ export default function Club({ id, name, tag, category }: ClubProps) {
     >
       <Link
         href={`/club/${id}`}
-        className="flex w-full flex-row items-center justify-between px-4 py-5 text-center sm:flex-col md:py-7"
+        className="flex w-full flex-row items-center justify-between px-5 py-4 text-center sm:flex-col md:py-7"
       >
-        <div className="text-lg font-semibold md:text-xl">{name}</div>
+        <div className="text-base font-semibold md:text-lg">{name}</div>
         <div className="sm:mt-4">
           <span
             className={`mr-1 rounded-lg px-2 py-1 text-xs font-semibold shadow-sm md:text-sm ${deptCaption[category]}`}
