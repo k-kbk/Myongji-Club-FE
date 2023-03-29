@@ -306,7 +306,7 @@ export default function Index() {
                   <span>을(를) 동아리 목록에서 삭제할까요?</span>
                 </div>
                 <p className="text-base font-semibold text-gray-500 sm:text-lg">
-                  동아리 계정도 함께 삭제돼요.
+                  OOO 계정도 함께 삭제돼요.
                 </p>
               </div>
               <div className="font-sm sm:font-base flex justify-between font-semibold">
