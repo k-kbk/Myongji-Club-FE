@@ -65,21 +65,23 @@ export default function Header() {
               className="w-32 sm:w-36"
             />
           </Link>
-          <button
-            type="button"
-            className="block px-3 py-4 opacity-70 sm:hidden"
-            onClick={handleMenuOpen}
-          >
-            <Image
-              src={isClicked ? '/close.png' : '/menu.png'}
-              width={96}
-              height={96}
-              quality={100}
-              priority
-              alt="menu"
-              className="w-7"
-            />
-          </button>
+          {!isPathAdminLogin && (
+            <button
+              type="button"
+              className="block px-3 py-4 opacity-70 sm:hidden"
+              onClick={handleMenuOpen}
+            >
+              <Image
+                src={isClicked ? '/close.png' : '/menu.png'}
+                width={96}
+                height={96}
+                quality={100}
+                priority
+                alt="menu"
+                className="w-7"
+              />
+            </button>
+          )}
           <nav className="hidden font-semibold sm:block sm:text-lg">
             {navItems[pathStartsWith].map(
               (item) =>
