@@ -66,7 +66,7 @@ export default function Header() {
         {isClicked ? (
           <button
             type="button"
-            className="block px-3 py-4 sm:hidden"
+            className="block px-3 py-4 opacity-70 sm:hidden"
             onClick={handleClick}
           >
             <Image
@@ -76,18 +76,18 @@ export default function Header() {
               quality={100}
               priority
               alt="menu"
-              className="w-6"
+              className="w-7"
             />
           </button>
         ) : (
           <button
             type="button"
-            className="block px-3 py-4 sm:hidden"
+            className="block px-3 py-4 opacity-70 sm:hidden"
             onClick={handleClick}
           >
             <Image
               src="/menu.png"
-              width={96}
+              width={95}
               height={96}
               quality={100}
               priority
