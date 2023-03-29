@@ -91,9 +91,9 @@ export default function Header() {
                     href={item.href}
                     className={`rounded-lg px-2.5 py-4 sm:px-3 ${
                       isSamePath(curPath, item.href)
-                        ? 'text-blue-600'
-                        : 'text-gray-600'
-                    } mx-1 transition-colors hover:text-blue-600`}
+                        ? 'text-blue-500'
+                        : 'text-gray-500'
+                    } mx-1 transition-colors hover:text-blue-500`}
                   >
                     {item.name}
                   </Link>

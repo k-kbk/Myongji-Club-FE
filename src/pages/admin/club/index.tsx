@@ -315,14 +315,14 @@ export default function Index() {
               <div className="font-sm sm:font-base flex justify-between font-semibold">
                 <button
                   type="button"
-                  className="w-[48%] rounded-lg bg-gray-200 bg-opacity-70 py-2.5 text-gray-600 hover:opacity-50 sm:py-3"
+                  className="w-[48%] rounded-lg bg-gray-200 bg-opacity-70 py-2.5 text-gray-600 transition-opacity hover:opacity-50 sm:py-3"
                   onClick={handleCloseModal}
                 >
                   취소
                 </button>
                 <button
                   type="button"
-                  className="w-[48%] rounded-lg bg-red-100 py-2.5 text-red-500 shadow-sm hover:opacity-50 sm:py-3"
+                  className="w-[48%] rounded-lg bg-red-100 py-2.5 text-red-500 shadow-sm transition-opacity hover:opacity-50 sm:py-3"
                 >
                   삭제하기
                 </button>
