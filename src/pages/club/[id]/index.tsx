@@ -236,13 +236,13 @@ const dummy = [
 ];
 
 const deptCaption: DeptCaptionType = {
-  학술: 'bg-green-100 text-green-600',
-  언행예술: 'bg-orange-100 text-orange-600',
-  봉사: 'bg-yellow-100 text-yellow-600',
-  전시창작: 'bg-purple-100 text-purple-600',
-  종교: 'bg-blue-100 text-blue-600',
-  체육: 'bg-pink-100 text-pink-600',
-  사회연구: 'bg-cyan-100 text-cyan-600',
+  학술: 'bg-green-100 text-green-500',
+  언행예술: 'bg-orange-100 text-orange-500',
+  봉사: 'bg-yellow-100 text-yellow-500',
+  전시창작: 'bg-purple-100 text-purple-500',
+  종교: 'bg-blue-100 text-blue-500',
+  체육: 'bg-pink-100 text-pink-500',
+  사회연구: 'bg-cyan-100 text-cyan-500',
 };
 
 const content = [
