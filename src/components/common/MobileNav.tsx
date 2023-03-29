@@ -69,9 +69,9 @@ export default function MobileNav({
               onClick={() => handleMenuClick(item.href)}
               className={`border-gray-100 px-6 py-5 text-left sm:px-3 ${
                 isSamePath(curPath, item.href)
-                  ? 'text-blue-600'
-                  : 'text-gray-600'
-              } transition-colors hover:text-blue-600`}
+                  ? 'text-blue-500'
+                  : 'text-gray-500'
+              } transition-colors hover:text-blue-500`}
             >
               {item.name}
             </button>

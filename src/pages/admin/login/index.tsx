@@ -28,7 +28,7 @@ export default function Index() {
           />
           <button
             type="button"
-            className="mt-14 w-full rounded-lg bg-blue-600 py-3 text-base font-bold text-white shadow-sm transition-opacity hover:opacity-70 sm:mt-20 sm:text-lg"
+            className="mt-14 w-full rounded-lg bg-blue-500 py-3 text-base font-bold text-white shadow-sm transition-opacity hover:opacity-70 sm:mt-20 sm:text-lg"
           >
             로그인하기
           </button>
