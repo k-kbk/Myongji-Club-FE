@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import isSamePath from '@/utils/isSamePath';
 
 const navItems = {
   user: [
@@ -103,7 +104,9 @@ export default function Header() {
                   key={item.id}
                   href={item.href}
                   className={`rounded-lg px-2.5 py-4 sm:px-3 ${
-                    curPath === item.href ? 'text-blue-600' : 'text-gray-600'
+                    isSamePath(curPath, item.href)
+                      ? 'text-blue-600'
+                      : 'text-gray-600'
                   } mx-1 transition-colors hover:text-blue-600`}
                 >
                   {item.name}
