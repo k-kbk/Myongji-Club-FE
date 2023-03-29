@@ -22,21 +22,23 @@ export default function Club({ id, name, tag, category }: ClubProps) {
   return (
     <li
       key={id}
-      className="flex w-full flex-col rounded-lg bg-white shadow-sm transition-opacity hover:opacity-50"
+      className="w-full rounded-lg bg-white shadow-sm transition-opacity hover:opacity-50"
     >
       <Link
         href={`/club/${id}`}
-        className="inline-block w-full py-6 text-center md:py-7"
+        className="flex w-full flex-row items-center justify-between px-4 py-5 text-center sm:flex-col md:py-7"
       >
-        <span
-          className={`mr-1 rounded-lg px-2 py-1 text-xs font-semibold shadow-sm md:text-sm ${deptCaption[category]}`}
-        >
-          {category}
-        </span>
-        <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-500 shadow-sm md:text-sm">
-          {tag}
-        </span>
-        <div className="mt-4 text-base font-semibold md:text-lg">{name}</div>
+        <div className="text-lg font-semibold md:text-xl">{name}</div>
+        <div className="sm:mt-4">
+          <span
+            className={`mr-1 rounded-lg px-2 py-1 text-xs font-semibold shadow-sm md:text-sm ${deptCaption[category]}`}
+          >
+            {category}
+          </span>
+          <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-500 shadow-sm md:text-sm">
+            {tag}
+          </span>
+        </div>
       </Link>
     </li>
   );
