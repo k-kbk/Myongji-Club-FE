@@ -1,5 +1,9 @@
 // import { useState } from 'react';
 
+import Modal from '@/components/common/Modal';
+import ModalPortal from '@/components/common/ModalPortal';
+import { useState } from 'react';
+
 const dummy = [
   {
     id: 1,
@@ -231,12 +235,25 @@ const dummy = [
   },
 ];
 
-export default function Index() {
-  // const [renderModal, setRenderModal] = useState<boolean>(false);
+type ClubType = {
+  id: number;
+  name: string;
+  tag: string;
+  category: string;
+};
 
-  // function handleClickModal() {
-  //   setRenderModal((prev) => !prev);
-  // }
+export default function Index() {
+  const [renderModal, setRenderModal] = useState<boolean>(false);
+  const [selectedClub, setSelectedClub] = useState<ClubType>();
+
+  function handleOpenModal(club: ClubType) {
+    setSelectedClub(club);
+    setRenderModal((prev) => !prev);
+  }
+
+  function handleCloseModal() {
+    setRenderModal((prev) => !prev);
+  }
 
   return (
     <>
@@ -245,13 +262,13 @@ export default function Index() {
           <h1 className="text-3xl font-bold sm:text-4xl">동아리 관리하기</h1>
           <button
             type="button"
-            className="hidden rounded-lg bg-gray-200 bg-opacity-70 px-3 py-1.5 text-base font-bold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:mt-0 sm:block sm:px-4 sm:py-2"
+            className="hidden rounded-lg bg-gray-200 bg-opacity-70 px-5 py-2.5 text-base font-bold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:block"
           >
             신규 동아리 등록하기
           </button>
           <button
             type="button"
-            className="block rounded-lg bg-gray-200 bg-opacity-70 px-3 py-1.5 text-base font-bold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:mt-0 sm:hidden sm:px-4 sm:py-2"
+            className="block rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2 text-base font-bold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:hidden"
           >
             등록하기
           </button>
@@ -271,6 +288,7 @@ export default function Index() {
               <button
                 type="button"
                 className="rounded-lg bg-red-200 bg-opacity-50 px-3 py-1.5 text-sm font-semibold text-red-500 shadow-sm transition-opacity hover:opacity-50 sm:text-base"
+                onClick={() => handleOpenModal(item)}
               >
                 삭제
               </button>
@@ -278,7 +296,41 @@ export default function Index() {
           ))}
         </ul>
       </div>
-      {/* {renderModal && <ClubFormModal setState={setRenderModal} />} */}
+      {renderModal && (
+        <ModalPortal>
+          <Modal>
+            <div className="mt-2 flex h-52 w-full flex-col justify-between rounded-lg border border-gray-100 bg-white py-8 px-6 sm:h-60 sm:w-128 sm:py-10 sm:px-10">
+              <div className="ml-2 mt-1 text-gray-800">
+                <div className="text-lg font-semibold leading-5 sm:text-xl sm:leading-6">
+                  <span>동아리</span>
+                  <span className="ml-1.5 font-semibold text-blue-500">
+                    {selectedClub?.name}
+                  </span>
+                  <span>을(를) 삭제할까요?</span>
+                </div>
+                <p className="text-base font-semibold text-gray-500 sm:text-lg">
+                  동아리 계정도 함께 삭제돼요.
+                </p>
+              </div>
+              <div className="font-sm sm:font-base flex justify-between font-semibold">
+                <button
+                  type="button"
+                  className="w-[48%] rounded-lg bg-gray-200 bg-opacity-70 py-2.5 text-gray-600 hover:opacity-50 sm:py-3"
+                  onClick={handleCloseModal}
+                >
+                  취소
+                </button>
+                <button
+                  type="button"
+                  className="w-[48%] rounded-lg bg-red-100 py-2.5 font-bold text-red-500 shadow-sm hover:opacity-50 sm:py-3"
+                >
+                  삭제하기
+                </button>
+              </div>
+            </div>
+          </Modal>
+        </ModalPortal>
+      )}
     </>
   );
 }
