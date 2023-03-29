@@ -92,7 +92,7 @@ export default function Header() {
               quality={100}
               priority
               alt="menu"
-              className="w-6"
+              className="w-7"
             />
           </button>
         )}
