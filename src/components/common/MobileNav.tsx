@@ -59,7 +59,7 @@ export default function MobileNav({
   }
 
   return (
-    <nav className="fixed z-10 mt-[3.75rem] flex w-full flex-col border-t bg-white font-semibold shadow sm:hidden">
+    <nav className="fixed z-10 mt-[3.75rem] flex w-full flex-col border-b bg-white font-semibold sm:hidden">
       {navItems[pathStartsWith].map(
         (item) =>
           !isPathAdminLogin && (
