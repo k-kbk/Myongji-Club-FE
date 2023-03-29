@@ -14,10 +14,10 @@ export default function Banner() {
       />
       <div className="mb-2 px-4 md:mx-4 md:mb-0 md:px-0">
         <p className="mb-0.5 text-2xl font-bold text-gray-900 md:text-4xl">
-          명아리가 탄생했어요!
+          OOO가 탄생했어요!
         </p>
         <p className="text-base font-semibold leading-5 text-gray-900 md:text-xl">
-          명지대학교 동아리의 모든 것을 명아리에서 확인해 보세요.
+          명지대학교 동아리의 모든 것을 OOO에서 확인해 보세요.
         </p>
       </div>
     </div>
