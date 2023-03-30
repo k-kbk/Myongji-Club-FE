@@ -301,7 +301,7 @@ export default function Index({ clubId }: { clubId: number }) {
       <div className="mb-8 flex justify-end">
         <Link
           href="/"
-          className="rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2.5 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:text-base"
+          className="rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:px-5 sm:py-2.5 sm:text-base"
         >
           이전으로 돌아가기
         </Link>
