@@ -274,22 +274,19 @@ export default function Index({ clubId }: { clubId: number }) {
         </span>
         <ClubInfo />
         <div className="mt-6 text-base font-bold text-gray-600 sm:mt-12 sm:text-lg">
-          대표 사진
-        </div>
-        <div className="mt-2 flex flex-col items-center justify-center">
-          <Image
-            src="/default.svg"
-            width={1000}
-            height={1000}
-            priority
-            alt="default"
-            className="w-full rounded-lg shadow-sm"
-          />
-        </div>
-        <div className="mt-6 text-base font-bold text-gray-600 sm:mt-12 sm:text-lg">
           동아리 소개
         </div>
         <div className="mt-2 rounded-lg bg-white p-5 shadow-sm sm:p-6">
+          <div className="mb-2 flex flex-col items-center justify-center">
+            <Image
+              src="/default.svg"
+              width={1000}
+              height={1000}
+              priority
+              alt="default"
+              className="w-full rounded-lg"
+            />
+          </div>
           {content.map((line, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <p key={index} className="text-base font-medium sm:text-lg">
