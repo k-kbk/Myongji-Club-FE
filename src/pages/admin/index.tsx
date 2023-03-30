@@ -3,8 +3,8 @@ import Link from 'next/link';
 export default function Index() {
   return (
     <>
-      <div className="mt-30 sm:mt-44 sm:py-10 sm:px-8">
-        <h1 className="text-1.5xl font-bold sm:text-2xl">
+      <div className="mt-30 sm:mt-44">
+        <h1 className="text-1.5xl font-bold sm:text-2.5xl">
           안녕하세요, <span className="text-blue-500">총동아리연합회</span>
           님!
         </h1>
@@ -12,7 +12,7 @@ export default function Index() {
       <div className="mb-2 mt-12 text-sm font-semibold text-gray-400 sm:mt-16 md:text-base">
         메뉴 바로가기
       </div>
-      <div className="mb-8 flex flex-col justify-between text-lg font-bold text-gray-700 sm:flex-row sm:text-2xl">
+      <div className="mb-8 flex flex-col justify-between text-lg font-bold sm:flex-row sm:text-2xl">
         <Link
           href="/admin/club"
           className="mb-3 w-full rounded-lg bg-white py-5 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"

@@ -280,7 +280,7 @@ export default function Index() {
           {dummy.map((item) => (
             <li
               key={item.id}
-              className="flex items-center justify-between rounded-lg bg-white py-3.5 px-4 shadow-sm sm:py-4 sm:px-6"
+              className="flex items-center justify-between rounded-lg bg-white py-3.5 px-4 shadow-sm sm:px-6"
             >
               <div className="text-base font-semibold sm:text-lg">
                 {item.name}
