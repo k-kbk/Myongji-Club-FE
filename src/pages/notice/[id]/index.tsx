@@ -59,14 +59,14 @@ export default function Index({ noticeId }: { noticeId: number }) {
   return (
     <>
       <div className="mb-6 md:mb-8">
-        <h1 className="mt-30 mb-1 text-2xl font-bold md:mb-3 md:mt-40 md:text-3xl">
+        <h1 className="mt-30 mb-1 text-2xl font-bold md:mb-2 md:mt-40 md:text-3xl">
           {dummy[noticeId].title}
         </h1>
         <time className="text-base font-medium text-gray-400 md:text-lg">
           {dummy[noticeId].date}
         </time>
       </div>
-      <div className="mb-8 w-full rounded-lg bg-white px-5 py-5 shadow-sm md:px-6 md:py-5">
+      <div className="mb-8 w-full rounded-lg bg-white p-5 shadow-sm md:p-6">
         {content.map((line, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <div key={index}>
@@ -78,7 +78,7 @@ export default function Index({ noticeId }: { noticeId: number }) {
       <div className="mb-8 flex justify-end">
         <Link
           href="/notice"
-          className="rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:px-5 sm:py-2.5 md:text-base"
+          className="rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2.5 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:px-5 md:text-base"
         >
           목록으로 돌아가기
         </Link>
