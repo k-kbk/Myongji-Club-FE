@@ -273,7 +273,7 @@ export default function Index({ clubId }: { clubId: number }) {
           {item.tag}
         </span>
         <ClubInfo />
-        <div className="mt-6 text-start text-base font-bold sm:mt-12 sm:text-lg">
+        <div className="mt-6 text-base font-bold text-gray-500 sm:mt-12 sm:text-lg">
           대표 사진
         </div>
         <div className="mt-2 flex flex-col items-center justify-center sm:mt-3">
@@ -286,13 +286,13 @@ export default function Index({ clubId }: { clubId: number }) {
             className="w-full rounded-lg shadow-sm"
           />
         </div>
-        <div className="mt-6 text-start text-base font-bold sm:mt-12 sm:text-lg">
+        <div className="mt-6 text-base font-bold text-gray-500 sm:mt-12 sm:text-lg">
           동아리 소개
         </div>
-        <div className="mt-2 rounded-lg bg-white px-4 py-3 shadow-sm sm:mt-3 md:px-6 md:py-5">
+        <div className="mt-2 rounded-lg bg-white px-5 py-5 shadow-sm sm:mt-3 sm:px-6 sm:py-5">
           {content.map((line, index) => (
             // eslint-disable-next-line react/no-array-index-key
-            <p key={index} className="text-base font-medium sm:text-lg">
+            <p key={index} className="text-base font-semibold sm:text-lg">
               {line}
             </p>
           ))}
@@ -301,7 +301,7 @@ export default function Index({ clubId }: { clubId: number }) {
       <div className="mb-8 flex justify-end">
         <Link
           href="/"
-          className="rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2.5 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 md:text-base"
+          className="rounded-lg bg-gray-200 bg-opacity-70 px-4 py-2.5 text-sm font-semibold text-gray-600 shadow-sm transition-opacity hover:opacity-50 sm:text-base"
         >
           이전으로 돌아가기
         </Link>
