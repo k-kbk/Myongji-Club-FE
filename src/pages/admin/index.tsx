@@ -5,7 +5,7 @@ export default function Index() {
     <>
       <div className="mt-30 sm:mt-44 sm:py-10 sm:px-8">
         <h1 className="text-1.5xl font-bold sm:text-2xl">
-          안녕하세요, <span className="text-blue-500">농어민후생연구회 흙</span>
+          안녕하세요, <span className="text-blue-500">총동아리연합회</span>
           님!
         </h1>
       </div>
