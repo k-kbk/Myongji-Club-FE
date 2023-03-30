@@ -70,7 +70,7 @@ export default function Index({ noticeId }: { noticeId: number }) {
         {content.map((line, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <div key={index}>
-            <p className="text-base font-semibold md:text-lg">{line}</p>
+            <p className="text-base font-medium md:text-lg">{line}</p>
             <br />
           </div>
         ))}

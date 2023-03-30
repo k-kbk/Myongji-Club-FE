@@ -273,7 +273,7 @@ export default function Index({ clubId }: { clubId: number }) {
           {item.tag}
         </span>
         <ClubInfo />
-        <div className="mt-6 text-base font-bold text-gray-500 sm:mt-12 sm:text-lg">
+        <div className="mt-6 text-base font-bold text-gray-600 sm:mt-12 sm:text-lg">
           대표 사진
         </div>
         <div className="mt-2 flex flex-col items-center justify-center">
@@ -286,13 +286,13 @@ export default function Index({ clubId }: { clubId: number }) {
             className="w-full rounded-lg shadow-sm"
           />
         </div>
-        <div className="mt-6 text-base font-bold text-gray-500 sm:mt-12 sm:text-lg">
+        <div className="mt-6 text-base font-bold text-gray-600 sm:mt-12 sm:text-lg">
           동아리 소개
         </div>
         <div className="mt-2 rounded-lg bg-white px-5 py-5 shadow-sm sm:px-6 sm:py-5">
           {content.map((line, index) => (
             // eslint-disable-next-line react/no-array-index-key
-            <p key={index} className="text-base font-semibold sm:text-lg">
+            <p key={index} className="text-base font-medium sm:text-lg">
               {line}
             </p>
           ))}
