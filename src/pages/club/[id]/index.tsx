@@ -289,7 +289,7 @@ export default function Index({ clubId }: { clubId: number }) {
         <div className="mt-6 text-base font-bold text-gray-600 sm:mt-12 sm:text-lg">
           동아리 소개
         </div>
-        <div className="mt-2 rounded-lg bg-white p-5 sm:p-6">
+        <div className="mt-2 rounded-lg bg-white p-5 shadow-sm sm:p-6">
           {content.map((line, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <p key={index} className="text-base font-medium sm:text-lg">
