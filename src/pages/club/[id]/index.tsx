@@ -277,7 +277,13 @@ export default function Index({ clubId }: { clubId: number }) {
           동아리 소개
         </div>
         <div className="mt-2 rounded-lg bg-white p-5 shadow-sm sm:p-6">
-          <div className="mb-2 flex flex-col items-center justify-center">
+          {content.map((line, index) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <p key={index} className="text-base font-medium sm:text-lg">
+              {line}
+            </p>
+          ))}
+          <div className="mt-2 flex flex-col items-center justify-center">
             <Image
               src="/default.svg"
               width={1000}
@@ -287,12 +293,6 @@ export default function Index({ clubId }: { clubId: number }) {
               className="w-full rounded-lg"
             />
           </div>
-          {content.map((line, index) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <p key={index} className="text-base font-medium sm:text-lg">
-              {line}
-            </p>
-          ))}
         </div>
       </div>
       <div className="mb-8 flex justify-end">
