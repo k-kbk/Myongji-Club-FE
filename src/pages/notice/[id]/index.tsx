@@ -58,7 +58,7 @@ const content = [
 export default function Index({ noticeId }: { noticeId: number }) {
   return (
     <>
-      <div className="mb-6 px-3 md:mb-8">
+      <div className="mb-6 md:mb-8">
         <h1 className="mt-30 mb-1 text-2xl font-bold md:mb-2 md:mt-40 md:text-3xl">
           {dummy[noticeId].title}
         </h1>
