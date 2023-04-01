@@ -258,7 +258,7 @@ export default function Index({ clubId }: { clubId: number }) {
 
   return (
     <>
-      <div className="mt-30 mb-8 w-full sm:mt-40">
+      <div className="mt-30 mb-8 w-full sm:mt-40 flex items-center">
         <h1 className="mr-4 inline text-2xl font-bold sm:mr-6 sm:text-3xl">
           {item.name}
         </h1>
