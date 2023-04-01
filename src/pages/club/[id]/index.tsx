@@ -275,7 +275,7 @@ export default function Index({ clubId }: { clubId: number }) {
         </span>
         </div>
         <ClubInfo />
-        <div className="mt-6 text-base font-bold sm:mt-12 sm:text-xl">
+        <div className="mt-6 text-base font-bold sm:mt-8 sm:text-xl">
           동아리 소개
         </div>
         <div className="mt-2 rounded-lg bg-white px-5 py-4 shadow-sm sm:px-7 sm:py-6">
