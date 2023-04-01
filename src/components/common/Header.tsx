@@ -52,9 +52,9 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed z-10 flex h-[3.75rem] w-full items-center justify-center border-b bg-white px-3 sm:h-16 sm:px-4">
-        <div className="flex w-full max-w-screen-lg items-center justify-between">
-          <Link href={navItems[pathStartsWith][0].href} className="px-3">
+      <header className="fixed z-10 flex h-[3.75rem] w-full items-center justify-center border-b bg-white sm:h-16">
+        <div className="flex w-full max-w-screen-lg items-center justify-between px-5">
+          <Link href={navItems[pathStartsWith][0].href}>
             <Image
               src="/logo_main.png"
               width={800}
@@ -68,7 +68,7 @@ export default function Header() {
           {!isPathAdminLogin && (
             <button
               type="button"
-              className="block px-3 py-4 opacity-70 sm:hidden"
+              className="block py-4 pl-3 opacity-70 sm:hidden"
               onClick={handleMenuOpen}
             >
               <Image
@@ -78,11 +78,11 @@ export default function Header() {
                 quality={100}
                 priority
                 alt="menu"
-                className="w-7"
+                className="w-6"
               />
             </button>
           )}
-          <nav className="hidden font-semibold sm:block">
+          <nav className="-mr-3 hidden font-semibold sm:block">
             {navItems[pathStartsWith].map(
               (item) =>
                 !isPathAdminLogin && (
