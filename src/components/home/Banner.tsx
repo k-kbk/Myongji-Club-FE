@@ -12,7 +12,7 @@ export default function Banner() {
         priority
         className="mx-2 h-28 w-28 md:h-38 md:w-38"
       />
-      <div className="mb-2 px-4 md:mx-4 md:mb-0 md:px-0">
+      <div className="mb-2 px-8 md:mx-4 md:mb-0 md:px-0">
         <p className="mb-0.5 text-2xl font-bold text-gray-900 md:text-4xl">
           OOO가 탄생했어요!
         </p>
