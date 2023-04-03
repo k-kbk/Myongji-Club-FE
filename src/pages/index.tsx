@@ -262,7 +262,7 @@ export default function Home() {
       <span className="mb-2 text-sm font-semibold text-gray-500 md:text-base">
         {filtered.length}개의 동아리
       </span>
-      <ul className="mb-8 grid grid-cols-1 place-items-center gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-4">
+      <ul className="mb-8 grid grid-cols-1 place-items-center gap-3 sm:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-4">
         {filtered.map((item) => (
           <Club
             key={item.id}
