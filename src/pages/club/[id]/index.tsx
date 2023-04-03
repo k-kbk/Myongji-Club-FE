@@ -260,19 +260,19 @@ export default function Index({ clubId }: { clubId: number }) {
     <>
       <div className="mt-30 mb-8 w-full sm:mt-40">
         <div className="flex items-center">
-        <h1 className="mr-4 inline text-2xl font-bold sm:mr-6 sm:text-3xl">
-          {item.name}
-        </h1>
-        <span
-          className={`mr-1 rounded-lg px-2 py-1 text-sm font-semibold shadow-sm sm:text-base ${
-            deptCaption[item.category]
-          }`}
-        >
-          {item.category}
-        </span>
-        <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-sm font-semibold text-gray-600 shadow-sm sm:text-base">
-          {item.tag}
-        </span>
+          <h1 className="mr-4 inline text-2xl font-bold sm:mr-6 sm:text-3xl">
+            {item.name}
+          </h1>
+          <span
+            className={`mr-1 rounded-lg px-2 py-1 text-sm font-semibold shadow-sm sm:text-base ${
+              deptCaption[item.category]
+            }`}
+          >
+            {item.category}
+          </span>
+          <span className="ml-1 rounded-lg bg-gray-100 px-2 py-1 text-sm font-semibold text-gray-600 shadow-sm sm:text-base">
+            {item.tag}
+          </span>
         </div>
         <ClubInfo />
         <div className="mt-6 text-base font-bold sm:mt-8 sm:text-xl">

@@ -12,10 +12,10 @@ export default function Index() {
       <div className="mb-2 mt-12 text-sm font-semibold text-gray-400 sm:mt-16 md:text-base">
         메뉴 바로가기
       </div>
-      <div className="mb-8 flex flex-col justify-between text-lg font-bold sm:flex-row sm:text-2xl">
+      <div className="mb-8 grid w-full grid-cols-1 gap-3 text-lg font-bold sm:grid-cols-2 sm:text-2xl md:gap-5 lg:grid-cols-3">
         <Link
           href="/admin/club"
-          className="mb-3 w-full rounded-lg bg-white py-5 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
+          className="w-full rounded-lg bg-white py-5 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:px-8 sm:py-8"
         >
           동아리 관리하기
           <p className="mt-2 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">
@@ -27,7 +27,7 @@ export default function Index() {
         </Link>
         <Link
           href="/admin/notice"
-          className="mb-3 w-full rounded-lg bg-white py-5 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
+          className="w-full rounded-lg bg-white py-5 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:px-8 sm:py-8"
         >
           OOO 공지사항 작성하기
           <p className="mt-2 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">
@@ -39,9 +39,21 @@ export default function Index() {
         </Link>
         <Link
           href="/admin/notice"
-          className="mb-3 w-full rounded-lg bg-white py-5 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:w-[32%] sm:px-8 sm:py-8"
+          className="w-full rounded-lg bg-white py-5 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:px-8 sm:py-8"
         >
           동아리 공지사항 작성하기
+          <p className="mt-2 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">
+            동아리(혹은 동아리 회장)에게 전달할
+          </p>
+          <p className="text-sm font-medium leading-tight text-gray-500 sm:text-base sm:leading-snug">
+            공지사항을 작성해요.
+          </p>
+        </Link>
+        <Link
+          href="/admin/notice"
+          className="w-full rounded-lg bg-white py-5 px-5 shadow-sm transition-opacity hover:opacity-50 sm:mb-0 sm:px-8 sm:py-8"
+        >
+          제출 파일 확인하기
           <p className="mt-2 text-sm font-medium leading-tight text-gray-500 sm:mt-4 sm:text-base sm:leading-snug">
             동아리(혹은 동아리 회장)에게 전달할
           </p>
