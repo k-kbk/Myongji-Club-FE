@@ -31,7 +31,7 @@ export default function Club({ id, name, tag, category }: ClubProps) {
         <div className="flex flex-col items-start">
           <div className="flex items-center">
             <span
-              className={`text-sm font-semibold md:text-sm ${deptCaption[category]}`}
+              className={`text-xs font-semibold md:text-sm ${deptCaption[category]}`}
             >
               {category}
             </span>
@@ -40,7 +40,7 @@ export default function Club({ id, name, tag, category }: ClubProps) {
               {tag}
             </span>
           </div>
-          <div className="mr-3 text-lg font-semibold sm:text-xl">{name}</div>
+          <div className="mr-3 text-base font-semibold sm:text-xl">{name}</div>
         </div>
         <div className="text-sm font-bold text-green-500">모집 중</div>
       </Link>
