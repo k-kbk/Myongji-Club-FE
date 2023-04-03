@@ -29,20 +29,22 @@ export default function Club({ id, name, tag, category }: ClubProps) {
         className="flex w-full flex-row items-center justify-between px-7 py-5 text-center sm:flex-col-reverse sm:justify-center sm:py-8"
       >
         <div className="flex flex-col items-start">
-          <div className="mr-3 text-lg font-semibold sm:text-xl">{name}</div>
+          <div className="mr-3 text-lg font-bold sm:text-xl">{name}</div>
           <div className="flex items-center">
             <span
-              className={`text-sm font-semibold md:text-sm ${deptCaption[category]}`}
+              className={`text-sm font-bold md:text-sm ${deptCaption[category]}`}
             >
               {category}
             </span>
             <span className="mx-1 text-sm text-gray-300">|</span>
-            <span className="text-sm font-semibold text-gray-500 md:text-sm">
+            <span className="text-sm font-bold text-gray-500 md:text-sm">
               {tag}
             </span>
           </div>
         </div>
-        <div className="text-sm font-bold text-green-500">모집 중</div>
+        <div className="rounded-lg bg-green-100 px-2 py-1 text-sm font-bold text-green-500">
+          모집 중
+        </div>
       </Link>
     </li>
   );
