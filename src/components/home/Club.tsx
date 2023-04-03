@@ -35,8 +35,8 @@ export default function Club({ id, name, tag, category }: ClubProps) {
             >
               {category}
             </span>
-            <span className="mx-1 text-sm text-gray-300">|</span>
-            <span className="text-sm font-semibold text-gray-500 md:text-sm">
+            <span className="mx-1 text-xs text-gray-300">|</span>
+            <span className="text-xs font-semibold text-gray-500 md:text-sm">
               {tag}
             </span>
           </div>
