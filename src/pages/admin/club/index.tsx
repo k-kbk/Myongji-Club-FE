@@ -299,9 +299,9 @@ export default function Index() {
       {renderModal && (
         <ModalPortal>
           <Modal>
-            <div className="mt-2 flex h-56 w-full flex-col justify-between rounded-lg border border-gray-100 bg-white py-8 px-6 sm:h-60 sm:w-128 sm:py-10 sm:px-10">
+            <div className="mt-2 flex h-56 w-[21rem] flex-col justify-between rounded-lg border border-gray-100 bg-white py-8 px-6 sm:h-60 sm:w-128 sm:py-10 sm:px-10">
               <div className="ml-2 mt-1 text-gray-800">
-                <div className="text-lg font-bold leading-5 sm:text-xl sm:leading-6">
+                <div className="text-lg font-bold leading-6 sm:text-xl sm:leading-6">
                   <span className=" text-blue-500">{selectedClub?.name}</span>
                   <span>을(를) 동아리 목록에서 삭제할까요?</span>
                 </div>
