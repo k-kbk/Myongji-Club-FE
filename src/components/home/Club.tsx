@@ -13,7 +13,7 @@ const deptCaption: DeptCaptionType = {
   언행예술: 'text-orange-500',
   봉사: 'text-yellow-500',
   전시창작: 'text-purple-500',
-  종교: 'text-blue-500',
+  종교: 'text-sky-500',
   체육: 'text-pink-500',
   사회연구: 'text-cyan-500',
 };
@@ -26,20 +26,16 @@ export default function Club({ id, name, tag, category }: ClubProps) {
     >
       <Link
         href={`/club/${id}`}
-        className="flex w-full flex-row items-center justify-between px-7 py-5 text-center sm:flex-col-reverse sm:justify-center sm:py-8"
+        className="flex w-full flex-row items-center justify-between px-7 py-5 text-center sm:flex-col-reverse sm:justify-center sm:py-7"
       >
-        <div className="flex flex-col items-start">
-          <div className="mr-3 text-lg font-bold sm:text-xl">{name}</div>
-          <div className="flex items-center">
-            <span
-              className={`text-sm font-bold md:text-sm ${deptCaption[category]}`}
-            >
+        <div className="flex flex-col items-start font-bold sm:items-center">
+          <div className="mr-3 mt-3 text-lg sm:mr-0 sm:text-xl">{name}</div>
+          <div className="mt-3 flex items-center">
+            <span className={`text-sm ${deptCaption[category]}`}>
               {category}
             </span>
-            <span className="mx-1 text-sm text-gray-300">|</span>
-            <span className="text-sm font-bold text-gray-500 md:text-sm">
-              {tag}
-            </span>
+            <span className="mx-1.5 text-sm font-normal text-gray-300">|</span>
+            <span className="text-sm text-gray-500">{tag}</span>
           </div>
         </div>
         <div className="rounded-lg bg-green-100 px-2 py-1 text-sm font-bold text-green-500">
