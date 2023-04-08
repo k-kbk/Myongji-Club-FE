@@ -29,8 +29,8 @@ export default function Club({ id, name, tag, category }: ClubProps) {
         className="flex w-full flex-row items-center justify-between px-7 py-5 text-center sm:flex-col-reverse sm:justify-center sm:py-7"
       >
         <div className="flex flex-col items-start font-bold sm:items-center">
-          <div className="mr-3 mt-3 text-lg sm:mr-0 sm:text-xl">{name}</div>
-          <div className="mt-3 flex items-center">
+          <div className="mr-3 sm:mt-3 text-lg sm:mr-0 sm:text-xl">{name}</div>
+          <div className="sm:mt-3 flex items-center">
             <span className={`text-sm ${deptCaption[category]}`}>
               {category}
             </span>
