@@ -26,7 +26,7 @@ export default function Club({ id, name, tag, category }: ClubProps) {
     >
       <Link
         href={`/club/${id}`}
-        className="flex w-full flex-row items-center justify-between px-7 py-5 text-center sm:flex-col-reverse sm:justify-center sm:py-7"
+        className="flex w-full flex-row items-center justify-between px-6 py-4 text-center sm:flex-col-reverse sm:justify-center sm:py-7"
       >
         <div className="flex flex-col items-start font-bold sm:items-center">
           <div className="mr-3 sm:mt-3 text-lg sm:mr-0 sm:text-xl">{name}</div>
